@@ -34,9 +34,33 @@ I won't get too much into the weeds here since the model is proprietary. However
   #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Standardizing Team Strength ####
 To begin, I need to find the totals of WAR values by position for each team. I use Baseball Prospectus's PECOTA projections to put together a likely depth chart and how much WAR a team is likely to produce at certain position. The data is provided in percentiles and from these distributions, I can put together an estimate for how much WAR a team can reasonably expect to accumulate over the course of a season. Below is an example of what that looks like using the 2023 Atlanta Braves's roster:
 
-Batters:
-![ATLOWAR](ATLPositionPlayerWAR.png)
+<div align="center">Position Players<div align="center">
+<div align="center"><img src="ATLPositionPlayerWAR.png"  width="80%" height="80%"><div align="center">
   
-Pitchers:
-![ATLPWAR](ATLPitcherWAR.png)
+<div align="center">Pitchers<div align="center">
+<div align="center"><img src="ATLPitcherWAR.png"  width="80%" height="80%"><div align="center">
+  
+<div align="left">When put all together, I am able to create a distribution of what the entire team will look like given an average season to create a WAR distribution for each team. Assuming the distribution for the value of WAR to be equal to the total number of wins that a team will end up with, I can then use this mean as a basis for a teams final record which will be used to calculate single game odds. In 2023, I want to use the distribution of WAR for each team to create a variance metric that will help to identify more/less risk than a mean value of WAR, which I have done in the past.<div align="left">
+  
+  
+  #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) Adjusting Daily Lineups
+  On any given day, the lineup that a team puts out will likely not be the same as the one that I have standardized. There are adjustments to be made for this and I will walk through the steps and some of the calculations I use to adjust for this. In adjusting the lineup every day for a given team helps to create an idea of what the record of a team *would be* if this lineup were to play an entire 162 game season. I will get more into the calculations later in this document.
+  
+  
+  ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) Batters and Position Players
+  For batters, I have discovered in the past that including adjustments in my model every day does not account for a significant difference in the win percentage output. With 9 batters each game, the output of win percentage is not heavily affected when 1/9th of the lineup does not play. There are two reasons to explain why adjusting a team's positional WAR has never significantly affected the output. To give an example, let's use the Pittsburgh Pirates.
+  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) The Starter:
+  
+  In Centerfield for the Pirates is Bryan Reynolds. In total, Reynolds is projected to accrue 2.8 WAR over the course of the season. The position as a whole will accrue 2.9 WAR over the course of the season. Reynolds will play CF in 80% of games, likely more. This then assumes that for the other 20% of games where Reynolds does not start, that player will accumulate 0.1 WAR. If Reynolds were to play 100% of games, this value would rise proportionately to the increase in games over 80% that he does play. Below I will show the 162 game calculations for Reynolds and generic CF backups.
+  
+  | Player      | % in CF | CF WAR | Calculation | 162 WAR |
+  |:------------|:-------:|:------:|:-----------:|:-------:|
+  |B. Reynolds  |80%      |2.8     |2.8 / 0.80   |3.5      |
+  |Backup       |20%      |0.1     |0.1 / 0.20   |0.5      |
+  
+  WOW! Reynolds is worth over 3 wins in a 162 game season compared to a backup player! That's a lot! Tommy, I thought that you said it wasn't a big difference! What does that mean for the adjustment??
+  
+  In reality, yes, this difference is a lot and it is the reason that the Pirates should be smart and extend Reynolds if they want any shot at success. However for this model, I aim to attack biases like these in a betting market. Among gamblers, position players (with maybe the exception of Judge and Trout) cannot affect a single game as much as other players (i.e., pitchers) can. While Reynolds is worth 3 wins (or 30 runs) more than his backup in a 162 game season, there is only 4/5 plate appearances per game for these players and when the CF only makes up 1/9 of a lineup, the difference between the two values is marginal at best. This difference also only comes into play if Reynolds plays over 80% of games in a season. If he were to play more, the CF WAR would increase at a rate proportional to the percent of games he plays over 80%. For every 16.2 games (10% of season) over 80% that Reynolds plays in CF, he will increase the total CF WAR by 0.35. For every 16.2 games that his backup plays over 20%, they will increase the CF WAR by 0.05. Given both of these values are 1/9 of a teams's total lineup, the 0.3 WAR difference per 10 games is only 0.03 per game. IN this model, I assume that 1 win is equal to 10 runs. I will get more into the assumption below, but for now, this means that the difference on a pergame basis is only 0.3 runs. While that is a more significant difference than other positions, Reynolds may also be playing another position in that lineup so the adjustment would really be between the playerin CF and the player that Reynolds displaced in another position. 
+  
   
