@@ -59,8 +59,46 @@ To begin, I need to find the totals of WAR values by position for each team. I u
   |B. Reynolds  |80%      |2.8     |2.8 / 0.80   |3.5      |
   |Backup       |20%      |0.1     |0.1 / 0.20   |0.5      |
   
-  WOW! Reynolds is worth over 3 wins in a 162 game season compared to a backup player! That's a lot! Tommy, I thought that you said it wasn't a big difference! What does that mean for the adjustment??
+  WOW! Reynolds is worth over 3 wins in a 162 game season compared to a backup player! That's a lot! I thought that you said it wasn't a big difference!? What does that mean for the adjustment??
   
-  In reality, yes, this difference is a lot and it is the reason that the Pirates should be smart and extend Reynolds if they want any shot at success. However for this model, I aim to attack biases like these in a betting market. Among gamblers, position players (with maybe the exception of Judge and Trout) cannot affect a single game as much as other players (i.e., pitchers) can. While Reynolds is worth 3 wins (or 30 runs) more than his backup in a 162 game season, there is only 4/5 plate appearances per game for these players and when the CF only makes up 1/9 of a lineup, the difference between the two values is marginal at best. This difference also only comes into play if Reynolds plays over 80% of games in a season. If he were to play more, the CF WAR would increase at a rate proportional to the percent of games he plays over 80%. For every 16.2 games (10% of season) over 80% that Reynolds plays in CF, he will increase the total CF WAR by 0.35. For every 16.2 games that his backup plays over 20%, they will increase the CF WAR by 0.05. Given both of these values are 1/9 of a teams's total lineup, the 0.3 WAR difference per 10 games is only 0.03 per game. IN this model, I assume that 1 win is equal to 10 runs. I will get more into the assumption below, but for now, this means that the difference on a pergame basis is only 0.3 runs. While that is a more significant difference than other positions, Reynolds may also be playing another position in that lineup so the adjustment would really be between the playerin CF and the player that Reynolds displaced in another position. 
+  In reality, yes, this difference is a lot and it is the reason that the Pirates should be smart and extend Reynolds if they want any shot at success. However for this model, I aim to attack biases like these in a betting market. Among gamblers, position players (with maybe the exception of Judge and Trout) cannot affect a single game as much as other players (i.e., pitchers) can. While Reynolds is worth 3 wins (or 30 runs) more than his backup in a 162 game season, there is only 4/5 plate appearances per game for these players and when the CF only makes up 1/9 of a lineup, the difference between the two values is marginal at best. This difference also only comes into play if Reynolds plays over 80% of games in a season. If he were to play more, the CF WAR would increase at a rate proportional to the percent of games he plays over 80%. For every 16.2 games (10% of season) over 80% that Reynolds plays in CF, he will increase the total CF WAR by 0.35. For every 16.2 games that his backup plays over 20%, they will increase the CF WAR by 0.05. Given both of these values are 1/9 of a teams's total lineup, the 0.3 WAR difference per 10 games is only 0.03 per game. IN this model, I assume that 1 win is equal to 10 runs. I will get more into the assumption below, but for now, this means that the difference on a pergame basis is only 0.3 runs. While that is a more significant difference than other positions, Reynolds may also be playing another position in that lineup so the adjustment would really be between the playerin CF and the player that Reynolds displaced in another position.
+  
+  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) The Rotating Cast of Characters:
+  The "Rotating Cast of Characters" is something the Pirates are well known for and is one of the reasons that they have been unable to find success. What I am referring to is swapping 2 to 4 players in one position. The reason that they split playing time is that they are usually equal players. Sometimes they bring different things to the table like speed or power but likely they are going to produce similar value in that position compared to their buddies playing the same position. Therefore, it is safe to assume that the difference between these players starting or not is such a small difference, that encapturing the value change in the past has never been too much of a probelem when projecting 162 game seasons given a lineup.
+  
+  
+  
+  With all of this being said, I have implemented a feature in 2023 that will capture these small difference to make the model even more accurate. I had not done so in the past because the difference were small and I had not created a function that would accomodate for these issues. Below, I will go into detail about the adjustments made for pitchers. THe theory is the same, but the numerical difference are much more significant given the large(er) role that pitchers play in the game of baseball.
+  
+  
+  
+  
+  
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii) Pitchers
+  For any given baseball game, the moneyline for an 81-win team (.500) against another 81-win team will vary significantly based on who is pitching compared to any position player. In a hypothetical matchup between two .500 teams, one team can be upwards to a -200 favorite/+200 underdog depending on the pitching matchup. The implied probability difference here is vast given that the two teams are both projected to win 50% of their games. A -200 favorite has an implied probability of 66.67% and a +200 underdog implies a 33.37% chance of winning this hypothetical matchup. *Thats a 33% difference based on pitchers alone!* Therefore. we need to adjust win totals significantly for pitchers. Here's how it works:
+  
+  
+  
+  Let's use an example of the Toronto Blue Jays here. This year, the rotation of starting pitchers is projected to produce 9.6 WAR. Most teams carry a rotation of 5 pitchers that will start games throughout a season. However, I want to incorperate all of the data at my hands and use % of starting innings pitched by each starting pitcher instead of just using a value of 5 to determine shares of starter innings pitched over the course of the season. Below is a table showing WAR values for each player and how much they are expected to contribute in a starter role:
+  
+  
+  | Player                | % as SP | SP WAR | Calculation | 162 WAR |
+  |:----------------------|:-------:|:------:|:-----------:|:-------:|
+  |Kevin Gausman          |18%      |2.5     |2.5 / 0.18   |13.9     |
+  |Alek Manoah            |18%      |1.6     |1.6 / 0.18   |8.9      |
+  |Chris Bassitt          |17%      |2.1     |2.1 / 0.17   |12.4     |
+  |Jose Berrios           |16%      |1.4     |1.4 / 0.16   |8.75     |
+  |Yusei Kikuchi          |12%      |1.2     |1.2 / 0.12   |10.0     |
+  |Hyun-jin Ryu           |5%       |0.3     |0.3 / 0.05   |6.0      |
+  |Other Starters         |14%      |0.5     |0.5 / 0.14   |3.57     |
+  |**Total**              |**100%** |**9.6** |**9.6 / 1**  |**9.6**  |
+  
+  
+  From this, we can see that Kevin Gausman on the mound for 162 games would be 4.3 WAR better than the projected total WAR for the entire rotation. Alek Manoah would be 0.7 WAR worse in a 162 game season, and so on and so on. The adjustment here for pitchers is essentially looking at efficiency. The pre-season projection is based on the time spent pitching as a starter, while the adjustment gives us what the roster would look like in a single game.
+  
+  
+  
+  Now that the adjustments are complete, it is time to talk ahout how I use these to create a projected win percentage for a team in a single game and spit out a value that can be compared to moneyline odds.
   
   
