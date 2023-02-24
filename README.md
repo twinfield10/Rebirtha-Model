@@ -32,7 +32,6 @@ I scrape data from [ESPNs Transactions page](https://www.espn.com/mlb/transactio
 I won't get too much into the weeds here since the model is proprietary. However, I will explain the theory behind how the model is set up using the data provided above.
   ####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Standardizing Team Strength
 To begin, I need to find the totals of WAR values by position for each team. I use Baseball Prospectus's PECOTA projections to put together a likely depth chart and how much WAR a team is likely to produce at certain position. The data is provided in percentiles and from these distributions, I can put together an estimate for how much WAR a team can reasonably expect to accumulate over the course of a season. Below is an example of what that looks like using the 2023 Atlanta Braves's roster:
+ 
+![ATLWAR](ATL WAR Position Chart.jpg)
   
-  
-
-
