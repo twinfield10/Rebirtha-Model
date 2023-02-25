@@ -50,7 +50,7 @@ To begin, I need to find the totals of WAR values by position for each team. I u
   ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) Batters and Position Players
   For batters, I have discovered in the past that including adjustments in my model every day does not account for a significant difference in the win percentage output. With 9 batters each game, the output of win percentage is not heavily affected when 1/9th of the lineup does not play. There are two reasons to explain why adjusting a team's positional WAR has never significantly affected the output. To give an example, let's use the Pittsburgh Pirates.
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) The Starter:
+  ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Everyday Starter:
   
   In Centerfield for the Pirates is Bryan Reynolds. In total, Reynolds is projected to accrue 2.8 WAR over the course of the season. The position as a whole will accrue 2.9 WAR over the course of the season. Reynolds will play CF in 80% of games, likely more. This then assumes that for the other 20% of games where Reynolds does not start, that player will accumulate 0.1 WAR. If Reynolds were to play 100% of games, this value would rise proportionately to the increase in games over 80% that he does play. Below I will show the 162 game calculations for Reynolds and generic CF backups.
   
@@ -64,7 +64,7 @@ To begin, I need to find the totals of WAR values by position for each team. I u
   In reality, yes, this difference is a lot and it is the reason that the Pirates should be smart and extend Reynolds if they want any shot at success. However for this model, I aim to attack biases like these in a betting market. Among gamblers, position players (with maybe the exception of Judge and Trout) cannot affect a single game as much as other players (i.e., pitchers) can. While Reynolds is worth 3 wins (or 30 runs) more than his backup in a 162 game season, there is only 4/5 plate appearances per game for these players and when the CF only makes up 1/9 of a lineup, the difference between the two values is marginal at best. This difference also only comes into play if Reynolds plays over 80% of games in a season. If he were to play more, the CF WAR would increase at a rate proportional to the percent of games he plays over 80%. For every 16.2 games (10% of season) over 80% that Reynolds plays in CF, he will increase the total CF WAR by 0.35. For every 16.2 games that his backup plays over 20%, they will increase the CF WAR by 0.05. The 0.3 WAR difference per 10 games is only 0.03 per game. In this model, I assume that 1 win is equal to 10 runs. I will get more into the assumption below, but for now, this means that the difference on a per game basis (over or under the allotted 80% of games) is only 0.3 runs. While that is a more significant difference than other positions, Reynolds may also be playing another position in that lineup so the adjustment would really be between the playerin CF and the player that Reynolds displaced in another position.
   
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) The Rotating Cast of Characters:
+  ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Rotating Cast of Characters:
   
   The "Rotating Cast of Characters" is something the Pirates are well known for and is one of the reasons that they have been unable to find success. What I am referring to is swapping 2 to 4 players in one position. The reason that they split playing time is that they are usually equal players. Sometimes they bring different things to the table like speed or power but likely they are going to produce similar value in that position compared to their buddies playing the same position. Therefore, it is safe to assume that the difference between these players starting or not is such a small difference, that encapturing the value change in the past has never been too much of a probelem when projecting 162 game seasons given a lineup.
   
@@ -108,14 +108,14 @@ To begin, I need to find the totals of WAR values by position for each team. I u
   
   First, I want to go over some assumptions that I use based on historic findings. These are pretty basic and are used as rules of thumb when evaluating the game of baseball from an analytical point of view.
   
-  #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Assumptions:
+  #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Assumptions:
   1) Wins and Runs - For every 10 runs that a team scores, they will average one win. This also works in reverse where every 10 theoretical runs a team *does not* give up, they will average one win. As WAR is Wins Above Replacement, we can convert 1 WAR to 10 runs above replacement.
   
   
   2) Pythagreon Win Percentage - This one exists almost everywhere and I don't want to get into to much detail. But the theory is that given a team's runs scored and runs allowed, we can project a team's final win percentage. Read more [here](https://www.mlb.com/glossary/advanced-stats/pythagorean-winning-percentage).
   
   
-  #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) Calculations:
+  #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) Calculations:
   Using the input of an adjusted WAR value based on a team's lineup, we can derive a win percentage for each team playing in a single game if the lineups. Using the 162 game season value of WAR for a lineup, we convert the difference of WAR between the current lineup and the whole season projection. 
   
   
@@ -140,7 +140,7 @@ Now obviously, both teams cannot win and both teams cannot lose. So we can elimi
   
   
   
-  #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c) Moneyline Comparison and Bet Decision:
+  #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c) Moneyline Comparison and Bet Decision:
   
   
 To compare to a moneyline, we need to convert American odds (-110, -200 +115, etc.) to a probability. You can use this calculator [here](https://www.gamingtoday.com/tools/implied-probability/) to play around with certain odds. An implied probability is the implied winning percentage for a given team in a game using gambling markets. When a book sets a price, we are able to use that implied probability to compare to my win percentages above.
@@ -159,7 +159,7 @@ To compare to a moneyline, we need to convert American odds (-110, -200 +115, et
   |Pittsburgh  |30.76%     |27.03%    |+3.77%      |Yes  |
   
   
-  ### 4) Conclusion ###
+  ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) Conclusion ###
   
   
   Essentially, this method of evaluating baseball games has been decently successful in the past and my hope is that I can implement changes every year to either improve the underlying data, my calculations, and/or the automation of certain processes. This model has taken various forms in Excel and Google Sheets, but I believe R has been the way to go in keeping this model running smoothly throughout the year and for many years to come. If you would like to know more or be included in my group chat where I send picks every day, please reach out and I will be more than happy to talk about the Rebirtha Model. Here's to a beautiful 2023 season! Best of luck!
