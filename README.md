@@ -131,9 +131,9 @@ To begin, I need to find the totals of WAR values by position for each team. I u
   | Scenario              | PIT % | TOR % | Probability| Value |
   |:----------------------|:-----:|:-----:|:----------:|:-----:|
   |PIT WIN & TOR LOSS     |40%    |40%    |0.4 x 0.4   |0.16   |
-  |PIT WIN & TOR WIN      |40%    |60%    |0.4 x 0.6   |8.24   |
+  |PIT WIN & TOR WIN      |40%    |60%    |0.4 x 0.6   |0.24   |
   |PIT LOSS & TOR WIN     |60%    |60%    |0.6 x 0.6   |0.36   |
-  |PIT LOSS & TOR LOSS    |60%    |40%    |0.6 x 0.4   |8.24   |
+  |PIT LOSS & TOR LOSS    |60%    |40%    |0.6 x 0.4   |0.24   |
   
   
 Now obviously, both teams cannot win and both teams cannot lose. So we can eliminate those scenarios after calculating. From there we take the total possibility that (PIT wins & TOR loses) + (TOR wins & PIT loses). This comes out to 0.52 (0.16+0.36). Now we take 0.16/0.52 to find the probability that PIT wins, and do the same for TOR (0.36/0.52). We end up with **PIT winning this game 30.76% of the time and Toronto winning this game 69.23% of the time**. Now it's time to compare to Vegas.
