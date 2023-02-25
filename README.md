@@ -116,14 +116,14 @@ To begin, I need to find the totals of WAR values by position for each team. I u
   
   
   #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) Calculations:
-  Using the input of an adjusted WAR value based on a team's lineup, we can derive a win percentage for each team playing in a single game if the lineups. Using the 162 game season value of WAR for a lineup, we convert the difference of WAR between the current lineup and the whole season projection. 
+  Using the input of an adjusted WAR value based on a team's lineup, we can derive a win percentage for each team playing in a single game using the current lineup. Using the 162 game season value of WAR for a lineup, we convert the difference of WAR between the current lineup and the whole season projection. 
   
   
   
-  Then I turn this into runs by multiplying by 10. For pitchers I multiply the WAR difference by -10 to get an adjusted number of runs allowed if certain pitchers are on the mound. For batters, we multiply by 10. Then those numbers are added to my projected runs scored/allowed at the beginning of the season. From there we use the pythagreon winning percentage formula to create a hypothetical win percentage if this lineup played a full season.
+  Then I turn the adjusted WAR difference into runs by multiplying by 10. For pitchers I multiply the WAR difference by -10 to get an adjusted number of runs allowed if certain pitchers are on the mound. For batters, we multiply by 10. Then those numbers are added to my projected runs scored/allowed at the beginning of the season. From there we use the pythagreon winning percentage formula to create a hypothetical win percentage if this lineup played a full season.
   
   
-  Next up is multiplying a win percentage for the home team against a win percentage for the away team. Let's use the Pirates and Blue Jays as an example. Say the Pirates hypothetical win percentage is 0.400 and the Blue Jays' is 0.600. From this I can take the opposite of winning (losing) and say that the Pirates' lose percentage is 0.600 and the Blue Jays' is 0.400. Using basic probability there are 4 potential outcomes: **1) a Pirates Win and Blue Jays Loss, 2) a Pirates Loss and a Blue Jays Win, 3) a Pirates Win and a Blue Jays Win, and 4) a Pirates Loss and a Blue Jays Loss.** The calculations for these scenarios are below:
+  Next up is multiplying a win percentage for the home team against a win percentage for the away team to create probabilities that either team wins the matchup. Let's use the Pirates and Blue Jays as an example. Say the Pirates' hypothetical win percentage is 0.400 and the Blue Jays' is 0.600. From this I can take the opposite of winning (losing) and say that the Pirates' lose percentage is 0.600 and the Blue Jays' is 0.400. Using basic probability there are 4 potential outcomes: **1) a Pirates Win and Blue Jays Loss, 2) a Pirates Loss and a Blue Jays Win, 3) a Pirates Win and a Blue Jays Win, and 4) a Pirates Loss and a Blue Jays Loss.** The calculations for these scenarios are below:
   
   
   
