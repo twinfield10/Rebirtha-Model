@@ -102,3 +102,63 @@ To begin, I need to find the totals of WAR values by position for each team. I u
   Now that the adjustments are complete, it is time to talk ahout how I use these to create a projected win percentage for a team in a single game and spit out a value that can be compared to moneyline odds.
   
   
+  
+  ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) The Calculation and Moneyline Comparison
+  
+  First, I want to go over some assumptions that I use based on historic findings. These are pretty basic and are used as rules of thumb when evaluating the game of baseball from an analytical point of view.
+  
+  #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Assumptions:
+  1) Wins and Runs - For every 10 runs that a team scores, they will average one win. This also works in reverse where every 10 theoretical runs a team *does not* give up, they will average one win. As WAR is Wins Above Replacement, we can convert 1 WAR to 10 runs above replacement.
+  
+  
+  2) Pythagreon Win Percentage - This one exists almost everywhere and I don't want to get into to much detail. But the theory is that given a team's runs scored and runs allowed, we can project a team's final win percentage. Read more [here](https://www.mlb.com/glossary/advanced-stats/pythagorean-winning-percentage).
+  
+  
+  #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) Calculations:
+  Using the input of an adjusted WAR value based on a team's lineup, we can derive a win percentage for each team playing in a single game if the lineups. Using the 162 game season value of WAR for a lineup, we convert the difference of WAR between the current lineup and the whole season projection. 
+  
+  
+  
+  Then I turn this into runs by multiplying by 10. For pitchers I multiply the WAR difference by -10 to get an adjusted number of runs allowed if certain pitchers are on the mound. For batters, we multiply by 10. Then those numbers are added to my projected runs scored/allowed at the beginning of the season. From there we use the pythagreon winning percentage formula to create a hypothetical win percentage if this lineup played a full season.
+  
+  
+  Next up is multiplying a win percentage for the home team against a win percentage for the away team. Let's use the Pirates and Blue Jays as an example. Say the Pirates hypothetical win percentage is 0.400 and the Blue Jays' is 0.600. From this I can take the opposite of winning (losing) and say that the Pirates' lose percentage is 0.600 and the Blue Jays' is 0.400. Using basic probability there are 4 potential outcomes: **1) a Pirates Win and Blue Jays Loss, 2) a Pirates Loss and a Blue Jays Win, 3) a Pirates Win and a Blue Jays Win, and 4) a Pirates Loss and a Blue Jays Loss.** The calculations for these scenarios are below:
+  
+  
+  
+  
+  | Scenario              | PIT % | TOR % | Probability| Value |
+  |:----------------------|:-----:|:-----:|:----------:|:-----:|
+  |PIT WIN & TOR LOSS     |40%    |40%    |0.4 x 0.4   |0.16   |
+  |PIT WIN & TOR WIN      |40%    |60%    |0.4 x 0.6   |8.24   |
+  |PIT LOSS & TOR WIN     |60%    |60%    |0.6 x 0.6   |0.36   |
+  |PIT LOSS & TOR LOSS    |60%    |40%    |0.6 x 0.4   |8.24   |
+  
+  
+Now obviously, both teams cannot win and both teams cannot lose. So we can eliminate those scenarios after calculating. From there we take the total possibility that (PIT wins & TOR loses) + (TOR wins & PIT loses). This comes out to 0.5 (0.16+0.36). Now we take 0.16/0.5 to find the probability that PIT wins, and do the same for TOR (0.36/0.5). We end up with **PIT winning this game 32% of the time and Toronto winning this game 72% of the time**. Now it's time to compare to Vegas.
+  
+  
+  
+  #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c) Moneyline Comparison and Bet Decision:
+  
+  
+To compare to a moneyline, we need to convert American odds (-110, -200 +15, etc.) to a probability. You can use this calculator [here](https://www.gamingtoday.com/tools/implied-probability/) to play around with certain odds. An implied probability is the implied winning percentage for a given team in a game using gambling markets. When a book sets a price, we are able to use that implied probability to compare to my win percentages above.
+  
+  
+  Using our example from above, let's say that Toronto are heavy favorites at -300 and Pittsburgh are +270 underdogs (don't worry, they're used to it). Converting these values to implied probability we get an implied probability of 75.0% for Toronto winning the game and 27.03% chance Pittsburgh wins this game according to the market. Below is a table showing the comparison of Rebirtha's probability to Vegas.
+  
+  
+  *If Rebirtha Prob > Vegas Prob, then we have found value and will place a bet. The size of the bet is determined by the magnitude of the difference*
+  
+  
+  
+  | Team       | Rebirtha  | Vegas    | Difference | Bet?|
+  |:-----------|:---------:|:--------:|:----------:|:----|
+  |Toronto     |72.00%     |75.00%    |-3.00%      |No   |
+  |Pittsburgh  |32.00%     |27.03%    |+4.97%      |Yes  |
+  
+  
+  ### 4) Conclusion ###
+  
+  
+  Essentially, this method of evaluating baseball games has been decently successful in the past and my hope is that I can implement changes every year to either improve the underlying data, my calculations, and/or the automation of certain processes. This model has taken various forms in Excel and Google Sheets, but I believe R has been the way to go in keeping this model running smoothly throughout the year and for many years to come. If you would like to know more or be included in my group chat where I send picks every day, please reach out and I will be more than happy to talk about the Rebirtha Model. Here's to a beautiful 2023 season! Best of luck!
