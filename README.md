@@ -136,17 +136,17 @@ To begin, I need to find the totals of WAR values by position for each team. I u
   |PIT LOSS & TOR LOSS    |60%    |40%    |0.6 x 0.4   |8.24   |
   
   
-Now obviously, both teams cannot win and both teams cannot lose. So we can eliminate those scenarios after calculating. From there we take the total possibility that (PIT wins & TOR loses) + (TOR wins & PIT loses). This comes out to 0.5 (0.16+0.36). Now we take 0.16/0.5 to find the probability that PIT wins, and do the same for TOR (0.36/0.5). We end up with **PIT winning this game 32% of the time and Toronto winning this game 72% of the time**. Now it's time to compare to Vegas.
+Now obviously, both teams cannot win and both teams cannot lose. So we can eliminate those scenarios after calculating. From there we take the total possibility that (PIT wins & TOR loses) + (TOR wins & PIT loses). This comes out to 0.52 (0.16+0.36). Now we take 0.16/0.52 to find the probability that PIT wins, and do the same for TOR (0.36/0.52). We end up with **PIT winning this game 30.76% of the time and Toronto winning this game 69.23% of the time**. Now it's time to compare to Vegas.
   
   
   
   #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c) Moneyline Comparison and Bet Decision:
   
   
-To compare to a moneyline, we need to convert American odds (-110, -200 +15, etc.) to a probability. You can use this calculator [here](https://www.gamingtoday.com/tools/implied-probability/) to play around with certain odds. An implied probability is the implied winning percentage for a given team in a game using gambling markets. When a book sets a price, we are able to use that implied probability to compare to my win percentages above.
+To compare to a moneyline, we need to convert American odds (-110, -200 +115, etc.) to a probability. You can use this calculator [here](https://www.gamingtoday.com/tools/implied-probability/) to play around with certain odds. An implied probability is the implied winning percentage for a given team in a game using gambling markets. When a book sets a price, we are able to use that implied probability to compare to my win percentages above.
   
   
-  Using our example from above, let's say that Toronto are heavy favorites at -300 and Pittsburgh are +270 underdogs (don't worry, they're used to it). Converting these values to implied probability we get an implied probability of 75.0% for Toronto winning the game and 27.03% chance Pittsburgh wins this game according to the market. Below is a table showing the comparison of Rebirtha's probability to Vegas.
+  Using our example from above, let's say that Toronto are heavy favorites at -300 and Pittsburgh are +270 underdogs (don't worry, they're used to it). Converting these values to implied probability we get an implied probability of 75.00% for Toronto winning the game and 27.03% chance Pittsburgh wins this game according to the market. Below is a table showing the comparison of Rebirtha's probability to Vegas.
   
   
   *If Rebirtha Prob > Vegas Prob, then we have found value and will place a bet. The size of the bet is determined by the magnitude of the difference*
@@ -155,8 +155,8 @@ To compare to a moneyline, we need to convert American odds (-110, -200 +15, etc
   
   | Team       | Rebirtha  | Vegas    | Difference | Bet?|
   |:-----------|:---------:|:--------:|:----------:|:----|
-  |Toronto     |72.00%     |75.00%    |-3.00%      |No   |
-  |Pittsburgh  |32.00%     |27.03%    |+4.97%      |Yes  |
+  |Toronto     |69.23%     |75.00%    |-5.77%      |No   |
+  |Pittsburgh  |30.76%     |27.03%    |+3.77%      |Yes  |
   
   
   ### 4) Conclusion ###
