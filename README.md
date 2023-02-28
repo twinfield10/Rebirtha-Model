@@ -32,13 +32,25 @@ I scrape data from [ESPNs Transactions page](https://www.espn.com/mlb/transactio
 I won't get too much into the weeds here since the model is proprietary. However, I will explain the theory behind how the model is set up using the data provided above.
   
   #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Standardizing Team Strength ####
-To begin, I need to find the totals of WAR values by position for each team. I use Baseball Prospectus's PECOTA projections to put together a likely depth chart and how much WAR a team is likely to produce at certain position. The data is provided in percentiles and from these distributions, I can put together an estimate for how much WAR a team can reasonably expect to accumulate over the course of a season. Below is an example of what that looks like using the 2023 Atlanta Braves's roster:
+To begin, I need to find the totals of WAR values by position for each team. I use Baseball Prospectus's PECOTA projections to put together a likely depth chart and how much WAR a team is likely to produce at certain position. The data is provided in percentiles and from these distributions, I can put together an estimate for how much WAR a team can reasonably expect to accumulate over the course of a season. Below is an example of what that looks like for a couple teams in 2023:
 
-<div align="center">Position Players<div align="center">
-<div align="center"><img src="ATLPositionPlayerWAR.png"  width="80%" height="80%"><div align="center">
+
+#### <div align="center">Position Players<div align="center"> ####
+<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Position Players - ATL.png"  width="95%" height="95%"><div align="center">
   
-<div align="center">Pitchers<div align="center">
-<div align="center"><img src="ATLPitcherWAR.png"  width="80%" height="80%"><div align="center">
+  
+<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Position Players - HOU.png"  width="95%" height="95%"><div align="center">
+  
+<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Position Players - PIT.png"  width="95%" height="95%"><div align="center">
+  
+  #### <div align="center">Pitchers<div align="center"> ####
+<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Pitchers - ATL.png"  width="95%" height="95%"><div align="center">
+  
+  
+<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Pitchers - HOU.png"  width="95%" height="95%"><div align="center">
+  
+  
+<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Pitchers - PIT.png"  width="95%" height="95%"><div align="center">
   
 <div align="left">When put all together, I am able to create a distribution of what the entire team will look like given an average season to create a WAR distribution for each team. Assuming the distribution for the value of WAR to be equal to the total number of wins that a team will end up with, I can then use this mean as a basis for a teams final record which will be used to calculate single game odds. In 2023, I want to use the distribution of WAR for each team to create a variance metric that will help to identify more/less risk than a mean value of WAR, which I have done in the past.<div align="left">
   
