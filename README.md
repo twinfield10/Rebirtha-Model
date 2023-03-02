@@ -36,12 +36,12 @@ To begin, I need to find the totals of WAR values by position for each team. I u
 
 
 #### <div align="center">Position Players<div align="center"> ####
-<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Position Players - ATL.png"  width="95%" height="95%"><div align="center">
+<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Position Players - SD.png"  width="95%" height="95%"><div align="center">
   
   
-<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Position Players - HOU.png"  width="95%" height="95%"><div align="center">
+<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Position Players - TB.png"  width="95%" height="95%"><div align="center">
   
-<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Position Players - PIT.png"  width="95%" height="95%"><div align="center">
+<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Position Players - OAK.png"  width="95%" height="95%"><div align="center">
   
   #### <div align="center">Pitchers<div align="center"> ####
 <div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Pitchers - ATL.png"  width="95%" height="95%"><div align="center">
