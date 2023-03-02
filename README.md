@@ -44,13 +44,13 @@ To begin, I need to find the totals of WAR values by position for each team. I u
 <div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Position Players - OAK.png"  width="95%" height="95%"><div align="center">
   
   #### <div align="center">Pitchers<div align="center"> ####
-<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Pitchers - ATL.png"  width="95%" height="95%"><div align="center">
+<div align="center"><img src="Charts/Team WAR/Pitchers/WAR Distribution - Pitchers - ATL.png"  width="95%" height="95%"><div align="center">
   
   
-<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Pitchers - HOU.png"  width="95%" height="95%"><div align="center">
+<div align="center"><img src="Charts/Team WAR/Pitchers/WAR Distribution - Pitchers - HOU.png"  width="95%" height="95%"><div align="center">
   
   
-<div align="center"><img src="Charts/WAR Distribution/WAR Distribution - Pitchers - PIT.png"  width="95%" height="95%"><div align="center">
+<div align="center"><img src="Charts/Team WAR/Pitchers/WAR Distribution - Pitchers - PIT.png"  width="95%" height="95%"><div align="center">
   
 <div align="left">When put all together, I am able to create a distribution of what the entire team will look like given an average season to create a WAR distribution for each team. Assuming the distribution for the value of WAR to be equal to the total number of wins that a team will end up with, I can then use this mean as a basis for a teams final record which will be used to calculate single game odds. In 2023, I want to use the distribution of WAR for each team to create a variance metric that will help to identify more/less risk than a mean value of WAR, which I have done in the past.<div align="left">
   
