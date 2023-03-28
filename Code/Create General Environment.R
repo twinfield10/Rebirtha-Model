@@ -249,7 +249,9 @@ H_WAR_Percentile_Pos_long <- H_WAR_Percentile_Pos %>%
 full_team_pos_ptile_long <- full_team_ptile_long_build()
 
 
-## Load Reference Tables ##
-
+## Load Reference Tables And Vectors ##
+## Set up colors and Vectors for All Positions/Divisions ##
+all_div = sort(c("AL West", "AL Central", "AL East", "NL West", "NL Central", "NL East"))
+all_pos = sort(unique(full_team_pos_ptile_long$position))
 APP_RefTbl <- gen_info_build()
 Pitch_LB <- load_2022_stats(20230321)

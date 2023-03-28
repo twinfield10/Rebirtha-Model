@@ -1556,7 +1556,6 @@ h_make_long_df <- function() {
   
   return(combined_df)
 }
-
 full_team_ptile_long_build <- function() {
   P_WAR_Percentile_Pos_long <- P_WAR_Percentile_Pos %>%
     pivot_longer(
@@ -1884,12 +1883,6 @@ Adv_Scale <- function(x) {
 
 
 ## Plotting Functions ##
-
-
-## Set up colors and Vectors for All Positions/Divisions ##
-all_div = sort(c("AL West", "AL Central", "AL East", "NL West", "NL Central", "NL East"))
-all_pos = sort(unique(full_team_pos_ptile_long$position))
-
 build_cols <- function() {
   mlb_cols <- data.frame(
     prim_col = league_pal("mlb", 1),
