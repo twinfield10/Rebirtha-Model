@@ -1,0 +1,686 @@
+﻿Team,Player,ROS,Playing time %,Role,IP_GS
+ARI,Zac Gallen,162 IP,GS 17%,Starter 1,5.9
+ARI,Merrill Kelly,172 IP,GS 18%,Starter 2,5.9
+ARI,Madison Bumgarner,135 IP,GS 16%,Starter 3,5.2
+ARI,Zach Davies,122 IP,GS 15%,Starter 4,5
+ARI,Ryne Nelson,95 IP,GS 13%,Starter 5,4.5
+ARI,Drey Jameson,92 IP,GS 8% RP 5%,"Starter, Long",4.8
+ARI,Brandon Pfaadt,34 IP,GS 5%,Starter,4.2
+ARI,Tommy Henry,32 IP,GS 4%,Starter,5
+ARI,Blake Walston,13 IP,GS 2%,Starter,4.1
+ARI,Tyler Gilbert,14 IP,GS 2%,Starter,4.4
+ARI,Kevin Ginkel,60 IP,RP 10% SV 45%,Closer,0
+ARI,Mark Melancon,42 IP,RP 7% SV 30%,Closer,0
+ARI,Joe Mantiply,60 IP,RP 10% SV 25%,Setup,0
+ARI,Scott McGough,60 IP,RP 10%,Middle,0
+ARI,Miguel Castro,60 IP,RP 10%,Middle,0
+ARI,Andrew Chafin,60 IP,RP 10%,Middle,0
+ARI,Cole Sulser,60 IP,RP 10%,Middle,0
+ARI,Kyle Nelson,54 IP,RP 9%,Middle,0
+ARI,Carlos Vargas,36 IP,RP 6%,Middle,0
+ARI,Luis Frías,30 IP,RP 5%,Middle,0
+ARI,Corbin Martin,18 IP,RP 3%,Middle,0
+ARI,Justin Martinez,18 IP,RP 3%,Middle,0
+ARI,Tyler Zuber,12 IP,RP 2%,Middle,0
+ATL,Max Fried,181 IP,GS 18%,Starter 1,6.2
+ATL,Charlie Morton,151 IP,GS 17%,Starter 2,5.5
+ATL,Spencer Strider,146 IP,GS 17%,Starter 3,5.3
+ATL,Kyle Wright,162 IP,GS 17%,Starter 4,5.9
+ATL,Mike Soroka,61 IP,GS 8%,Starter 5,4.7
+ATL,Ian Anderson,62 IP,GS 8%,Starter,4.8
+ATL,Jared Shuster,62 IP,GS 8%,Starter,4.8
+ATL,Dylan Dodd,33 IP,GS 5%,Starter,4.1
+ATL,Bryce Elder,33 IP,GS 2% RP 3%,"Starter, Long",5
+ATL,Raisel Iglesias,51 IP,RP 9% SV 70%,Closer,0
+ATL,Joe Jimenez,62 IP,RP 11% SV 15%,Setup,0
+ATL,A.J. Minter,62 IP,RP 11% SV 15%,Setup,0
+ATL,Collin McHugh,62 IP,RP 11%,Middle,0
+ATL,Lucas Luetge,45 IP,RP 8%,Middle,0
+ATL,Kirby Yates,45 IP,RP 8%,Middle,0
+ATL,Jesse Chavez,45 IP,RP 8%,Middle,0
+ATL,Nick Anderson,40 IP,RP 7%,Middle,0
+ATL,Kolby Allard,23 IP,RP 4%,Middle,0
+ATL,Seth Elledge,23 IP,RP 4%,Middle,0
+ATL,Michael Tonkin,17 IP,RP 3%,Middle,0
+ATL,Darius Vines,11 IP,RP 2%,Middle,0
+ATL,Jackson Stephens,11 IP,RP 2%,Middle,0
+ATL,Dylan Lee,51 IP,RP 9%,Long,0
+BAL,Cole Irvin,166 IP,GS 18%,Starter 1,5.7
+BAL,Kyle Gibson,160 IP,GS 18%,Starter 2,5.5
+BAL,Dean Kremer,125 IP,GS 14%,Starter 3,5.5
+BAL,Kyle Bradish,97 IP,GS 12%,Starter 4,5
+BAL,Grayson Rodriguez,93 IP,GS 12%,Starter 5,4.8
+BAL,Tyler Wells,100 IP,GS 12% RP 2%,"Starter, Long",4.5
+BAL,John Means,48 IP,GS 6%,Starter,4.9
+BAL,Austin Voth,71 IP,GS 4% RP 7%,"Starter, Long",4.4
+BAL,DL Hall,38 IP,GS 2% RP 4%,"Starter, Long",4.3
+BAL,Bruce Zimmermann,27 IP,GS 2% RP 2%,"Starter, Long",4.5
+BAL,Felix Bautista,48 IP,RP 8% SV 90%,Closer,0
+BAL,Cionel Perez,55 IP,RP 9% SV 5%,Setup,0
+BAL,Dillon Tate,42 IP,RP 7% SV 5%,Setup,0
+BAL,Andrew Politi,42 IP,RP 7%,Mop Up,0
+BAL,Bryan Baker,55 IP,RP 9%,Middle,0
+BAL,Logan Gillaspie,42 IP,RP 7%,Middle,0
+BAL,Mychal Givens,42 IP,RP 7%,Middle,0
+BAL,Joey Krehbiel,24 IP,RP 4%,Middle,0
+BAL,Nick Vespi,18 IP,RP 3%,Middle,0
+BAL,Yennier Cano,18 IP,RP 3%,Middle,0
+BAL,Drew Rom,12 IP,RP 2%,Middle,0
+BAL,Keegan Akin,55 IP,RP 9%,Long,0
+BAL,Spenser Watkins,36 IP,RP 6%,Long,0
+BAL,Michael Baumann,24 IP,RP 4%,Long,0
+BOS,Chris Sale,118 IP,GS 14%,Starter 1,5.2
+BOS,Nick Pivetta,146 IP,GS 17%,Starter 2,5.3
+BOS,Corey Kluber,129 IP,GS 15%,Starter 3,5.3
+BOS,James Paxton,84 IP,GS 11%,Starter 4,4.7
+BOS,Garrett Whitlock,86 IP,GS 9% RP 3%,"Starter 5, Long",4.6
+BOS,Tanner Houck,95 IP,GS 6% RP 8%,"Starter 6, Middle",4.5
+BOS,Brayan Bello,78 IP,GS 10%,Starter,4.8
+BOS,Kutter Crawford,99 IP,GS 6% RP 8%,"Starter, Middle",4.9
+BOS,Bryan Mata,61 IP,GS 5% RP 4%,"Starter, Middle",4.4
+BOS,Josh Winckowski,47 IP,GS 3% RP 4%,"Starter, Long",4.5
+BOS,Brandon Walter,15 IP,GS 2%,Starter,4.5
+BOS,Chris Murphy,27 IP,GS 2% RP 2%,"Starter, Long",4.5
+BOS,Kenley Jansen,64 IP,RP 10% SV 85%,Closer,0
+BOS,John Schreiber,64 IP,RP 10% SV 10%,Setup,0
+BOS,Chris Martin,58 IP,RP 9% SV 5%,Setup,0
+BOS,Joely Rodriguez,38 IP,RP 6%,Setup,0
+BOS,Richard Bleier,58 IP,RP 9%,Middle,0
+BOS,Ryan Brasier,58 IP,RP 9%,Middle,0
+BOS,Wyatt Mills,38 IP,RP 6%,Middle,0
+BOS,Zack Kelly,38 IP,RP 6%,Middle,0
+BOS,Kaleb Ort,38 IP,RP 6%,Middle,0
+CHW,Dylan Cease,166 IP,GS 18%,Starter 1,5.7
+CHW,Lance Lynn,165 IP,GS 17%,Starter 2,6
+CHW,Lucas Giolito,163 IP,GS 18%,Starter 3,5.6
+CHW,Michael Kopech,122 IP,GS 15%,Starter 4,5
+CHW,Mike Clevinger,124 IP,GS 15%,Starter 5,5.1
+CHW,Davis Martin,76 IP,GS 8% RP 2%,"Starter, Long",5
+CHW,Sean Burke,26 IP,GS 4%,Starter,4
+CHW,Jimmy Lambert,37 IP,GS 3% RP 3%,"Starter, Long",4
+CHW,Jonathan Stiever,14 IP,GS 2%,Starter,4.2
+CHW,Kendall Graveman,58 IP,RP 10% SV 50%,Closer,0
+CHW,Reynaldo Lopez,58 IP,RP 10% SV 30%,Setup,0
+CHW,Aaron Bummer,52 IP,RP 9% SV 10%,Setup,0
+CHW,Liam Hendriks,12 IP,RP 2% SV 10%,Closer,0
+CHW,Garrett Crochet,40 IP,RP 7%,Setup,0
+CHW,Nick Avila,40 IP,RP 7%,Mop Up,0
+CHW,Jose Ruiz,58 IP,RP 10%,Middle,0
+CHW,Jake Diekman,52 IP,RP 9%,Middle,0
+CHW,Joe Kelly,52 IP,RP 9%,Middle,0
+CHW,Matt Foster,29 IP,RP 5%,Middle,0
+CHW,Tanner Banks,29 IP,RP 5%,Middle,0
+CHW,Frank German,23 IP,RP 4%,Middle,0
+CHW,A.J. Alexy,17 IP,RP 3%,Middle,0
+CHW,Nicholas Padilla,17 IP,RP 3%,Middle,0
+CHW,Gregory Santos,12 IP,RP 2%,Middle,0
+CHC,Marcus Stroman,151 IP,GS 17%,Starter 1,5.5
+CHC,Jameson Taillon,140 IP,GS 16%,Starter 2,5.4
+CHC,Justin Steele,122 IP,GS 15%,Starter 3,5
+CHC,Drew Smyly,117 IP,GS 15%,Starter 4,4.8
+CHC,Hayden Wesneski,121 IP,GS 14% RP 2%,"Starter 5, Long",4.8
+CHC,Kyle Hendricks,103 IP,GS 12%,Starter,5.3
+CHC,Adrian Sampson,82 IP,GS 5% RP 7%,"Starter, Long",4.8
+CHC,Caleb Kilian,13 IP,GS 2%,Starter,4
+CHC,Adbert Alzolay,63 IP,GS 2% RP 8%,"Starter, Middle",4.3
+CHC,Javier Assad,58 IP,GS 2% RP 7%,"Starter, Long",4.5
+CHC,Brad Boxberger,56 IP,RP 9% SV 40%,Closer,0
+CHC,Michael Fulmer,56 IP,RP 9% SV 40%,Closer,0
+CHC,Brandon Hughes,62 IP,RP 10% SV 15%,Setup,0
+CHC,Rowan Wick,43 IP,RP 7% SV 5%,Setup,0
+CHC,Michael Rucker,43 IP,RP 7%,Middle,0
+CHC,Julian Merryweather,37 IP,RP 6%,Middle,0
+CHC,Jeremiah Estrada,37 IP,RP 6%,Middle,0
+CHC,Codi Heuer,37 IP,RP 6%,Middle,0
+CHC,Manuel Rodriguez,12 IP,RP 2%,Middle,0
+CHC,Anthony Kay,12 IP,RP 2%,Middle,0
+CHC,Brendon Little,12 IP,RP 2%,Middle,0
+CHC,Mark Leiter Jr.,12 IP,RP 2%,Middle,0
+CHC,Keegan Thompson,49 IP,RP 8%,Long,0
+CIN,Hunter Greene,155 IP,GS 18%,Starter 1,5.3
+CIN,Nick Lodolo,155 IP,GS 18%,Starter 2,5.3
+CIN,Graham Ashcraft,149 IP,GS 17%,Starter 3,5.4
+CIN,Luis Cessa,111 IP,GS 12% RP 4%,"Starter 4, Middle",4.4
+CIN,Luke Weaver,84 IP,GS 11%,Starter 5,4.7
+CIN,Connor Overton,84 IP,GS 9% RP 4%,"Starter, Long",4
+CIN,Justin Dunn,45 IP,GS 6%,Starter,4.6
+CIN,Brandon Williamson,48 IP,GS 5% RP 2%,"Starter, Long",4.3
+CIN,Chase Anderson,14 IP,GS 2%,Starter,4.2
+CIN,Levi Stoudt,32 IP,GS 2% RP 3%,"Starter, Long",4
+CIN,Alexis Diaz,58 IP,RP 9% SV 80%,Closer,0
+CIN,Lucas Sims,52 IP,RP 8% SV 15%,Setup,0
+CIN,Tony Santillan,45 IP,RP 7% SV 5%,Setup,0
+CIN,Ian Gibaut,58 IP,RP 9%,Middle,0
+CIN,Buck Farmer,52 IP,RP 8%,Middle,0
+CIN,Fernando Cruz,45 IP,RP 7%,Middle,0
+CIN,Alex Young,39 IP,RP 6%,Middle,0
+CIN,Joel Kuhnel,32 IP,RP 5%,Middle,0
+CIN,Tejay Antone,32 IP,RP 5%,Middle,0
+CIN,Ricky Karcher,26 IP,RP 4%,Middle,0
+CIN,Derek Law,26 IP,RP 4%,Middle,0
+CIN,Bennett Sousa,19 IP,RP 3%,Middle,0
+CIN,Vladimir Gutierrez,13 IP,RP 2%,Middle,0
+CIN,Casey Legumina,13 IP,RP 2%,Middle,0
+CIN,Reiver Sanmartin,52 IP,RP 8%,Long,0
+CLE,Shane Bieber,181 IP,GS 18%,Starter 1,6.2
+CLE,Triston McKenzie,169 IP,GS 18%,Starter 2,5.8
+CLE,Cal Quantrill,163 IP,GS 18%,Starter 3,5.6
+CLE,Aaron Civale,137 IP,GS 16%,Starter 4,5.3
+CLE,Zach Plesac,140 IP,GS 16%,Starter 5,5.4
+CLE,Cody Morris,76 IP,GS 6% RP 6%,"Starter, Long",4.4
+CLE,Konnor Pilkington,51 IP,GS 4% RP 4%,"Starter, Long",4.5
+CLE,Xzavion Curry,36 IP,GS 2% RP 4%,"Starter, Long",4.4
+CLE,Hunter Gaddis,35 IP,GS 2% RP 4%,"Starter, Long",4
+CLE,Emmanuel Clase,61 IP,RP 11% SV 85%,Closer,0
+CLE,James Karinchak,55 IP,RP 10% SV 10%,Setup,0
+CLE,Trevor Stephan,55 IP,RP 10% SV 5%,Setup,0
+CLE,Eli Morgan,61 IP,RP 11%,Middle,0
+CLE,Enyel De Los Santos,50 IP,RP 9%,Middle,0
+CLE,Nick Sandlin,50 IP,RP 9%,Middle,0
+CLE,Tim Herrin,50 IP,RP 9%,Middle,0
+CLE,Sam Hentges,39 IP,RP 7%,Middle,0
+CLE,Jason Bilous,17 IP,RP 3%,Long,0
+CLE,Joey Cantillo,17 IP,RP 3%,Long,0
+COL,German Marquez,172 IP,GS 18%,Starter 1,5.9
+COL,Kyle Freeland,154 IP,GS 17%,Starter 2,5.6
+COL,Antonio Senzatela,132 IP,GS 16%,Starter 3,5.1
+COL,Ryan Feltner,119 IP,GS 15%,Starter 4,4.9
+COL,Jose Urena,118 IP,GS 14%,Starter 5,5.2
+COL,Austin Gomber,100 IP,GS 7% RP 7%,"Starter, Long",5.1
+COL,Peter Lambert,56 IP,GS 6% RP 2%,"Starter, Long",4.5
+COL,Ryan Rolison,20 IP,GS 3%,Starter,4.1
+COL,Connor Seabold,32 IP,GS 2% RP 3%,"Starter, Long",4.3
+COL,Noah Davis,25 IP,GS 2% RP 2%,"Starter, Long",4
+COL,Daniel Bard,60 IP,RP 10% SV 90%,Closer,0
+COL,Brent Suter,60 IP,RP 10% SV 10%,Setup,0
+COL,Justin Lawrence,54 IP,RP 9%,Setup,0
+COL,Brad Hand,48 IP,RP 8%,Setup,0
+COL,Tyler Kinley,24 IP,RP 4%,Setup,0
+COL,Dinelson Lamet,54 IP,RP 9%,Middle,0
+COL,Pierce Johnson,48 IP,RP 8%,Middle,0
+COL,Jake Bird,42 IP,RP 7%,Middle,0
+COL,Riley Pint,24 IP,RP 4%,Middle,0
+COL,Gavin Hollowell,24 IP,RP 4%,Middle,0
+COL,Lucas Gilbreath,24 IP,RP 4%,Middle,0
+COL,Nick Mears,18 IP,RP 3%,Middle,0
+COL,Blair Calvo,12 IP,RP 2%,Middle,0
+COL,Ty Blach,24 IP,RP 4%,Long,0
+DET,Eduardo Rodriguez,160 IP,GS 18%,Starter 1,5.5
+DET,Matt Manning,135 IP,GS 16%,Starter 2,5.2
+DET,Spencer Turnbull,116 IP,GS 14%,Starter 3,5.1
+DET,Matthew Boyd,97 IP,GS 12%,Starter 4,5
+DET,Michael Lorenzen,99 IP,GS 12%,Starter 5,5.1
+DET,Tarik Skubal,79 IP,GS 9%,Starter,5.4
+DET,Joey Wentz,71 IP,GS 8% RP 2%,"Starter, Long",4.5
+DET,Beau Brieske,46 IP,GS 4% RP 2%,"Starter, Long",5.2
+DET,Alex Faedo,46 IP,GS 3% RP 4%,"Starter, Long",4.5
+DET,Casey Mize,15 IP,GS 2%,Starter,4.7
+DET,Garrett Hill,50 IP,GS 2% RP 6%,"Starter, Long",4
+DET,Alex Lange,61 IP,RP 10% SV 80%,Closer,0
+DET,Jose Cisnero,61 IP,RP 10% SV 10%,Setup,0
+DET,Will Vest,61 IP,RP 10% SV 10%,Setup,0
+DET,Mason Englert,37 IP,RP 6%,Mop Up,0
+DET,Jason Foley,61 IP,RP 10%,Middle,0
+DET,Brendan White,31 IP,RP 5%,Middle,0
+DET,Edwin Uceta,24 IP,RP 4%,Middle,0
+DET,Freddy Pacheco,24 IP,RP 4%,Middle,0
+DET,Miguel Diaz,12 IP,RP 2%,Middle,0
+DET,Tyler Holton,12 IP,RP 2%,Middle,0
+DET,Angel De Jesus,12 IP,RP 2%,Middle,0
+DET,Zach Logue,12 IP,RP 2%,Middle,0
+DET,Tyler Alexander,61 IP,RP 10%,Long,0
+DET,Rony Garcia,43 IP,RP 7%,Long,0
+DET,Reese Olson,12 IP,RP 2%,Long,0
+HOU,Framber Valdez,191 IP,GS 19%,Starter 1,6.2
+HOU,Cristian Javier,143 IP,GS 16%,Starter 2,5.5
+HOU,Lance McCullers Jr.,127 IP,GS 14%,Starter 3,5.6
+HOU,Jose Urquidy,154 IP,GS 17%,Starter 4,5.6
+HOU,Luis Garcia,131 IP,GS 15%,Starter 5,5.4
+HOU,Hunter Brown,109 IP,GS 9% RP 6%,"Starter, Long",5.2
+HOU,Forrest Whitley,30 IP,GS 4%,Starter,4.6
+HOU,Brandon Bielak,40 IP,GS 2% RP 5%,"Starter, Long",4
+HOU,Shawn Dubin,24 IP,GS 2% RP 2%,"Starter, Long",4
+HOU,J.P. France,24 IP,GS 2% RP 2%,"Starter, Long",4
+HOU,Ryan Pressly,55 IP,RP 10% SV 80%,Closer,0
+HOU,Hector Neris,60 IP,RP 11% SV 15%,Setup,0
+HOU,Rafael Montero,55 IP,RP 10% SV 5%,Setup,0
+HOU,Ryne Stanek,55 IP,RP 10%,Setup,0
+HOU,Phil Maton,60 IP,RP 11%,Middle,0
+HOU,Bryan Abreu,55 IP,RP 10%,Middle,0
+HOU,Seth Martinez,38 IP,RP 7%,Middle,0
+HOU,Parker Mushinski,22 IP,RP 4%,Middle,0
+HOU,Blake Taylor,22 IP,RP 4%,Middle,0
+HOU,Enoli Paredes,22 IP,RP 4%,Middle,0
+HOU,Matt Gage,11 IP,RP 2%,Middle,0
+HOU,Ronel Blanco,11 IP,RP 2%,Middle,0
+KC,Brady Singer,166 IP,GS 18%,Starter 1,5.7
+KC,Zack Greinke,135 IP,GS 16%,Starter 2,5.2
+KC,Jordan Lyles,151 IP,GS 17%,Starter 3,5.5
+KC,Daniel Lynch,101 IP,GS 13%,Starter 4,4.8
+KC,Ryan Yarbrough,105 IP,GS 9% RP 6%,"Starter 5, Long",4.7
+KC,Kris Bubic,61 IP,GS 8%,Starter,4.7
+KC,Jon Heasley,32 IP,GS 4%,Starter,4.9
+KC,Brad Keller,78 IP,GS 4% RP 7%,"Starter, Middle",5.4
+KC,Jackson Kowar,34 IP,GS 3% RP 2%,"Starter, Long",4.5
+KC,Alec Marsh,14 IP,GS 2%,Starter,4.2
+KC,Jonathan Bowlan,13 IP,GS 2%,Starter,4
+KC,Max Castillo,15 IP,GS 2%,Starter,4.6
+KC,Angel Zerpa,26 IP,GS 2% RP 2%,"Starter, Long",4.3
+KC,Scott Barlow,61 IP,RP 10% SV 65%,Closer,0
+KC,Aroldis Chapman,49 IP,RP 8% SV 20%,Setup,0
+KC,Dylan Coleman,55 IP,RP 9% SV 10%,Setup,0
+KC,Josh Staumont,49 IP,RP 8% SV 5%,Setup,0
+KC,Taylor Clarke,55 IP,RP 9%,Middle,0
+KC,Amir Garrett,55 IP,RP 9%,Middle,0
+KC,Richard Lovelady,37 IP,RP 6%,Middle,0
+KC,Josh Taylor,37 IP,RP 6%,Middle,0
+KC,Jose Cuas,25 IP,RP 4%,Middle,0
+KC,Collin Snider,25 IP,RP 4%,Middle,0
+KC,Carlos Hernandez,61 IP,RP 10%,Long,0
+LAA,Shohei Ohtani,162 IP,GS 17%,Starter 1,5.9
+LAA,Patrick Sandoval,145 IP,GS 16%,Starter 2,5.6
+LAA,Tyler Anderson,163 IP,GS 18%,Starter 3,5.6
+LAA,Reid Detmers,143 IP,GS 17%,Starter 4,5.2
+LAA,Jose Suarez,122 IP,GS 15%,Starter 5,5
+LAA,Tucker Davidson,90 IP,GS 6% RP 8%,"Starter 6, Long",4.5
+LAA,Chase Silseth,44 IP,GS 6%,Starter,4.5
+LAA,Griffin Canning,33 IP,GS 3% RP 2%,"Starter, Long",4.4
+LAA,Davis Daniel,15 IP,GS 2%,Starter,4.6
+LAA,Carlos Estevez,58 IP,RP 10% SV 40%,Closer,0
+LAA,Jimmy Herget,58 IP,RP 10% SV 30%,Closer,0
+LAA,Ryan Tepera,58 IP,RP 10% SV 30%,Closer,0
+LAA,Jose Quijada,52 IP,RP 9%,Setup,0
+LAA,Aaron Loup,52 IP,RP 9%,Setup,0
+LAA,Matt Moore,64 IP,RP 11%,Middle,0
+LAA,Andrew Wantz,46 IP,RP 8%,Middle,0
+LAA,Chris Rodriguez,17 IP,RP 3%,Middle,0
+LAA,Zack Weiss,12 IP,RP 2%,Middle,0
+LAA,Kolton Ingram,12 IP,RP 2%,Middle,0
+LAA,Justin Garza,12 IP,RP 2%,Middle,0
+LAA,Ben Joyce,12 IP,RP 2%,Middle,0
+LAA,Jose Marte,12 IP,RP 2%,Middle,0
+LAA,Jaime Barria,58 IP,RP 10%,Long,0
+LAD,Julio Urias,163 IP,GS 18%,Starter 1,5.6
+LAD,Tony Gonsolin,131 IP,GS 15%,Starter 2,5.4
+LAD,Clayton Kershaw,134 IP,GS 15%,Starter 3,5.5
+LAD,Dustin May,124 IP,GS 15%,Starter 4,5.1
+LAD,Noah Syndergaard,120 IP,GS 14%,Starter 5,5.3
+LAD,Ryan Pepiot,73 IP,GS 8% RP 2%,"Starter 5, Long",4.7
+LAD,Michael Grove,42 IP,GS 4% RP 2%,"Starter, Long",4.6
+LAD,Gavin Stone,34 IP,GS 3% RP 2%,"Starter, Long",4.5
+LAD,Brusdar Graterol,59 IP,GS 2% RP 9% SV 10%,"Starter, Setup",1
+LAD,Justin Bruihl,32 IP,GS 2% RP 3%,"Starter, Middle",4
+LAD,Andre Jackson,25 IP,GS 2% RP 3%,"Starter, Middle",2
+LAD,Bobby Miller,26 IP,GS 2% RP 2%,"Starter, Middle",4.2
+LAD,Evan Phillips,62 IP,RP 10% SV 30%,Closer,0
+LAD,Alex Vesia,62 IP,RP 10% SV 25%,Closer,0
+LAD,Daniel Hudson,37 IP,RP 6% SV 25%,Closer,0
+LAD,Caleb Ferguson,56 IP,RP 9% SV 5%,Middle,0
+LAD,Yency Almonte,56 IP,RP 9% SV 5%,Middle,0
+LAD,Phil Bickford,50 IP,RP 8%,Middle,0
+LAD,Victor Gonzalez,43 IP,RP 7%,Middle,0
+LAD,Shelby Miller,31 IP,RP 5%,Middle,0
+LAD,J.P. Feyereisen,25 IP,RP 4%,Middle,0
+LAD,Alex Reyes,19 IP,RP 3%,Middle,0
+LAD,Jake Reed,12 IP,RP 2%,Middle,0
+LAD,Nick Robertson,12 IP,RP 2%,Middle,0
+LAD,Jimmy Nelson,12 IP,RP 2%,Middle,0
+MIA,Sandy Alcantara,204 IP,GS 18%,Starter 1,7
+MIA,Johnny Cueto,168 IP,GS 17%,Starter 2,6.1
+MIA,Trevor Rogers,114 IP,GS 15%,Starter 3,4.7
+MIA,Jesus Luzardo,129 IP,GS 15%,Starter 4,5.3
+MIA,Edward Cabrera,122 IP,GS 15%,Starter 5,5
+MIA,Braxton Garrett,87 IP,GS 7% RP 5%,"Starter, Long",5.2
+MIA,Max Meyer,32 IP,GS 5%,Starter,4
+MIA,Eury Pérez,22 IP,GS 3%,Starter,4.5
+MIA,Sixto Sanchez,42 IP,GS 3% RP 4%,"Starter, Long",4
+MIA,Bryan Hoeing,30 IP,GS 2% RP 3%,"Starter, Long",4
+MIA,Dylan Floro,50 IP,RP 9% SV 70%,Closer,0
+MIA,A.J. Puk,50 IP,RP 9% SV 15%,Setup,0
+MIA,Tanner Scott,45 IP,RP 8% SV 15%,Setup,0
+MIA,Nic Enright,17 IP,RP 3%,Mop Up,0
+MIA,Steven Okert,50 IP,RP 9%,Middle,0
+MIA,Tommy Nance,50 IP,RP 9%,Middle,0
+MIA,Matt Barnes,50 IP,RP 9%,Middle,0
+MIA,JT Chargois,45 IP,RP 8%,Middle,0
+MIA,Huascar Brazoban,39 IP,RP 7%,Middle,0
+MIA,Andrew Nardi,28 IP,RP 5%,Middle,0
+MIA,George Soriano,22 IP,RP 4%,Middle,0
+MIA,Eli Villalobos,17 IP,RP 3%,Middle,0
+MIA,Josh Simpson,17 IP,RP 3%,Middle,0
+MIA,Daniel Castano,11 IP,RP 2%,Middle,0
+MIL,Corbin Burnes,175 IP,GS 18%,Starter 1,6
+MIL,Brandon Woodruff,166 IP,GS 18%,Starter 2,5.7
+MIL,Eric Lauer,151 IP,GS 17%,Starter 3,5.5
+MIL,Freddy Peralta,112 IP,GS 15%,Starter 4,4.6
+MIL,Wade Miley,124 IP,GS 16%,Starter 5,4.8
+MIL,Adrian Houser,85 IP,GS 7% RP 5%,"Starter, Long",4.9
+MIL,Aaron Ashby,51 IP,GS 5% RP 2%,"Starter, Long",4.8
+MIL,Ethan Small,25 IP,GS 2% RP 2%,"Starter, Middle",4
+MIL,Jason Alexander,40 IP,GS 2% RP 4%,"Starter, Long",5.1
+MIL,Devin Williams,65 IP,RP 11% SV 80%,Closer,0
+MIL,Matt Bush,53 IP,RP 9% SV 10%,Setup,0
+MIL,Hoby Milner,53 IP,RP 9% SV 10%,Setup,0
+MIL,Gus Varland,12 IP,RP 2%,Mop Up,0
+MIL,Peter Strzelecki,47 IP,RP 8%,Middle,0
+MIL,Jake Cousins,41 IP,RP 7%,Middle,0
+MIL,Elvis Peguero,41 IP,RP 7%,Middle,0
+MIL,Joel Payamps,35 IP,RP 6%,Middle,0
+MIL,Javy Guerra,35 IP,RP 6%,Middle,0
+MIL,Janson Junk,35 IP,RP 6%,Middle,0
+MIL,Cam Robinson,23 IP,RP 4%,Middle,0
+MIL,Tyson Miller,18 IP,RP 3%,Middle,0
+MIL,Jean Carlos Mejia,18 IP,RP 3%,Middle,0
+MIL,Bryse Wilson,35 IP,RP 6%,Long,0
+MIN,Sonny Gray,135 IP,GS 16%,Starter 1,5.2
+MIN,Pablo Lopez,151 IP,GS 17%,Starter 2,5.5
+MIN,Joe Ryan,149 IP,GS 17%,Starter 3,5.4
+MIN,Tyler Mahle,126 IP,GS 15%,Starter 4,5.2
+MIN,Kenta Maeda,107 IP,GS 13%,Starter 5,5.1
+MIN,Bailey Ober,50 IP,GS 6%,Starter,5.1
+MIN,Louie Varland,44 IP,GS 4% RP 2%,"Starter, Long",4.9
+MIN,Chris Paddack,23 IP,GS 3%,Starter,4.8
+MIN,Simeon Woods Richardson,23 IP,GS 3%,Starter,4.7
+MIN,Cole Sands,37 IP,GS 2% RP 4%,"Starter, Long",4
+MIN,Josh Winder,34 IP,GS 2% RP 3%,"Starter, Long",4.9
+MIN,Ronny Henriquez,32 IP,GS 2% RP 3%,"Starter, Long",4.3
+MIN,Jorge Lopez,60 IP,RP 10% SV 75%,Closer,0
+MIN,Jhoan Duran,60 IP,RP 10% SV 15%,Setup,0
+MIN,Griffin Jax,60 IP,RP 10% SV 5%,Setup,0
+MIN,Emilio Pagan,60 IP,RP 10% SV 5%,Middle,0
+MIN,Trevor Megill,60 IP,RP 10%,Middle,0
+MIN,Jorge Alcala,60 IP,RP 10%,Middle,0
+MIN,Caleb Thielbar,60 IP,RP 10%,Middle,0
+MIN,Jovani Moran,60 IP,RP 10%,Middle,0
+MIN,Jordan Balazovic,12 IP,RP 2%,Middle,0
+MIN,Randy Dobnak,24 IP,RP 4%,Long,0
+MIN,Brent Headrick,12 IP,RP 2%,Long,0
+NYY,Gerrit Cole,188 IP,GS 19%,Starter 1,6.1
+NYY,Carlos Rodon,136 IP,GS 15%,Starter 2,5.6
+NYY,Nestor Cortes Jr.,157 IP,GS 17%,Starter 3,5.7
+NYY,Luis Severino,125 IP,GS 14%,Starter 4,5.5
+NYY,Domingo German,113 IP,GS 14%,Starter 5,5
+NYY,Clarke Schmidt,91 IP,GS 9% RP 5%,"Starter, Middle",4.3
+NYY,Frankie Montas,32 IP,GS 4%,Starter,5
+NYY,Jhony Brito,39 IP,GS 4% RP 2%,"Starter, Long",4.2
+NYY,Randy Vasquez,13 IP,GS 2%,Starter,4.1
+NYY,Deivi Garcia,36 IP,GS 2% RP 4%,"Starter, Long",4
+NYY,Clay Holmes,63 IP,RP 11% SV 70%,Closer,0
+NYY,Jonathan Loaisiga,57 IP,RP 10% SV 20%,Setup,0
+NYY,Wandy Peralta,57 IP,RP 10% SV 10%,Setup,0
+NYY,Michael King,57 IP,RP 10%,Middle,0
+NYY,Ron Marinaccio,52 IP,RP 9%,Middle,0
+NYY,Jimmy Cordero,40 IP,RP 7%,Middle,0
+NYY,Tommy Kahnle,40 IP,RP 7%,Middle,0
+NYY,Albert Abreu,40 IP,RP 7%,Middle,0
+NYY,Greg Weissert,40 IP,RP 7%,Middle,0
+NYY,Lou Trivino,34 IP,RP 6%,Middle,0
+NYY,Matt Krook,29 IP,RP 5%,Middle,4
+NYM,Justin Verlander,171 IP,GS 17%,Starter 1,6.2
+NYM,Max Scherzer,171 IP,GS 17%,Starter 2,6.2
+NYM,Kodai Senga,132 IP,GS 16%,Starter 3,5.1
+NYM,Carlos Carrasco,126 IP,GS 15%,Starter 4,5.2
+NYM,David Peterson,110 IP,GS 12% RP 3%,"Starter 5, Long",4.8
+NYM,Jose Quintana,66 IP,GS 8%,Starter,5.1
+NYM,Tylor Megill,94 IP,GS 8% RP 6%,"Starter, Long",4.6
+NYM,Elieser Hernandez,57 IP,GS 3% RP 6%,"Starter, Long",4.7
+NYM,Joey Lucchesi,32 IP,GS 2% RP 3%,"Starter, Middle",4.6
+NYM,Jose Butto,26 IP,GS 2% RP 2%,"Starter, Long",4.4
+NYM,David Robertson,57 IP,RP 10% SV 60%,Closer,0
+NYM,Adam Ottavino,57 IP,RP 10% SV 40%,Closer,0
+NYM,Brooks Raley,57 IP,RP 10%,Middle,0
+NYM,Drew Smith,51 IP,RP 9%,Middle,0
+NYM,Stephen Nogosek,46 IP,RP 8%,Middle,0
+NYM,Tommy Hunter,40 IP,RP 7%,Middle,0
+NYM,John Curtiss,40 IP,RP 7%,Middle,0
+NYM,Jeff Brigham,28 IP,RP 5%,Middle,0
+NYM,Bryce Montes de Oca,23 IP,RP 4%,Middle,0
+NYM,Stephen Ridings,11 IP,RP 2%,Middle,0
+NYM,Dennis Santana,11 IP,RP 2%,Middle,0
+NYM,Sam Coonrod,11 IP,RP 2%,Middle,0
+NYM,William Woods,11 IP,RP 2%,Middle,0
+NYM,Denyi Reyes,11 IP,RP 2%,Long,0
+OAK,James Kaprielian,118 IP,GS 14%,Starter 1,5.2
+OAK,Drew Rucinski,130 IP,GS 16%,Starter 2,5
+OAK,Shintaro Fujinami,113 IP,GS 14%,Starter 3,5
+OAK,Paul Blackburn,110 IP,GS 13%,Starter 4,5.2
+OAK,Ken Waldichuk,114 IP,GS 13% RP 2%,"Starter 5, Long",4.8
+OAK,Kyle Muller,101 IP,GS 13%,Starter 6,4.8
+OAK,JP Sears,94 IP,GS 10% RP 3%,"Starter, Long",4.6
+OAK,Adrian Martinez,70 IP,GS 5% RP 5%,"Starter, Long",4.7
+OAK,Adam Oller,66 IP,GS 2% RP 8%,"Starter, Long",4.5
+OAK,Dany Jimenez,58 IP,RP 9% SV 40%,Closer,0
+OAK,Trevor May,58 IP,RP 9% SV 40%,Closer,0
+OAK,Zach Jackson,58 IP,RP 9% SV 20%,Setup,0
+OAK,Jeurys Familia,58 IP,RP 9%,Middle,0
+OAK,Sam Moll,58 IP,RP 9%,Middle,0
+OAK,Domingo Acevedo,58 IP,RP 9%,Middle,0
+OAK,Chad Smith,51 IP,RP 8%,Middle,0
+OAK,Freddy Tarnok,38 IP,RP 6%,Middle,0
+OAK,Kirby Snead,26 IP,RP 4%,Middle,0
+OAK,Luis Medina,26 IP,RP 4%,Middle,0
+OAK,Miguel Romero,13 IP,RP 2%,Middle,0
+OAK,Hogan Harris,26 IP,RP 4%,Long,0
+PHI,Aaron Nola,187 IP,GS 18%,Starter 1,6.4
+PHI,Zack Wheeler,172 IP,GS 18%,Starter 2,5.9
+PHI,Ranger Suarez,149 IP,GS 17%,Starter 3,5.4
+PHI,Taijuan Walker,137 IP,GS 16%,Starter 4,5.3
+PHI,Bailey Falter,108 IP,GS 11% RP 4%,"Starter 5, Long",4.8
+PHI,Andrew Painter,46 IP,GS 6%,Starter,4.7
+PHI,Michael Plassmeyer,59 IP,GS 6% RP 3%,"Starter, Long",4.3
+PHI,Cristopher Sanchez,54 IP,GS 5% RP 3%,"Starter, Long",4.6
+PHI,Griff McGarry,20 IP,GS 3%,Starter,4.2
+PHI,Seranthony Dominguez,51 IP,RP 9% SV 30%,Closer,0
+PHI,Gregory Soto,56 IP,RP 10% SV 25%,Closer,0
+PHI,Craig Kimbrel,51 IP,RP 9% SV 25%,Closer,0
+PHI,Jose Alvarado,51 IP,RP 9% SV 15%,Setup,0
+PHI,Andrew Bellatti,51 IP,RP 9% SV 5%,Setup,0
+PHI,Matt Strahm,45 IP,RP 8%,Middle,0
+PHI,Connor Brogdon,45 IP,RP 8%,Middle,0
+PHI,Nick Nelson,45 IP,RP 8%,Middle,0
+PHI,Yunior Marte,40 IP,RP 7%,Middle,0
+PHI,Luis Ortiz,28 IP,RP 5%,Middle,0
+PHI,Andrew Vasquez,28 IP,RP 5%,Middle,0
+PHI,Erich Uelmen,17 IP,RP 3%,Middle,0
+PIT,Mitch Keller,155 IP,GS 18%,Starter 1,5.3
+PIT,JT Brubaker,152 IP,GS 18%,Starter 2,5.2
+PIT,Roansy Contreras,143 IP,GS 18%,Starter 3,4.9
+PIT,Vince Velasquez,131 IP,GS 14% RP 4%,"Starter 4, Long",4.6
+PIT,Rich Hill,107 IP,GS 14%,Starter 5,4.7
+PIT,Johan Oviedo,108 IP,GS 12% RP 4%,"Starter, Long",4.2
+PIT,Luis Ortiz,46 IP,GS 4% RP 3%,"Starter, Middle",4.1
+PIT,Quinn Priester,14 IP,GS 2%,Starter,4.2
+PIT,David Bednar,59 IP,RP 9% SV 90%,Closer,0
+PIT,Wil Crowe,59 IP,RP 9% SV 10%,Setup,0
+PIT,Jose Hernandez,20 IP,RP 3%,Mop Up,0
+PIT,Chase De Jong,59 IP,RP 9%,Middle,0
+PIT,Luis De Los Santos,59 IP,RP 9%,Middle,0
+PIT,Robert Stephenson,59 IP,RP 9%,Middle,0
+PIT,Duane Underwood Jr.,59 IP,RP 9%,Middle,0
+PIT,Jarlin Garcia,59 IP,RP 9%,Middle,0
+PIT,Colin Holderman,53 IP,RP 8%,Middle,0
+PIT,Dauri Moreta,46 IP,RP 7%,Middle,0
+PIT,Yohan Ramirez,33 IP,RP 5%,Middle,0
+PIT,Mike Burrows,20 IP,RP 3%,Long,0
+SD,Yu Darvish,190 IP,GS 18%,Starter 1,6.5
+SD,Joe Musgrove,175 IP,GS 18%,Starter 2,6
+SD,Blake Snell,146 IP,GS 17%,Starter 3,5.3
+SD,Michael Wacha,131 IP,GS 15%,Starter 4,5.4
+SD,Nick Martínez,137 IP,GS 13% RP 5%,"Starter 5, Long",5.2
+SD,Seth Lugo,79 IP,GS 6% RP 6%,"Starter, Long",4.7
+SD,Jay Groome,29 IP,GS 4%,Starter,4.5
+SD,Adrian Morejon,48 IP,GS 3% RP 5%,"Starter, Middle",4.2
+SD,Reiss Knehr,30 IP,GS 2% RP 3%,"Starter, Middle",4
+SD,Ryan Weathers,24 IP,GS 2% RP 2%,"Starter, Long",4.1
+SD,Pedro Avila,24 IP,GS 2% RP 2%,"Starter, Long",4
+SD,Josh Hader,55 IP,RP 10% SV 80%,Closer,0
+SD,Robert Suarez,39 IP,RP 7% SV 10%,Setup,0
+SD,Drew Pomeranz,28 IP,RP 5% SV 10%,Setup,0
+SD,Luis Garcia,44 IP,RP 8%,Setup,0
+SD,Nabil Crismatt,55 IP,RP 10%,Middle,0
+SD,Tim Hill,55 IP,RP 10%,Middle,0
+SD,Steven Wilson,50 IP,RP 9%,Middle,0
+SD,Michel Baez,17 IP,RP 3%,Middle,0
+SD,Ray Kerr,17 IP,RP 3%,Middle,0
+SD,Brent Honeywell Jr.,17 IP,RP 3%,Middle,0
+SD,Jose Castillo,17 IP,RP 3%,Middle,0
+SD,Angel Felipe,11 IP,RP 2%,Middle,0
+SD,Tom Cosgrove,11 IP,RP 2%,Middle,0
+SD,Sean Poppen,11 IP,RP 2%,Middle,0
+SEA,Luis Castillo,172 IP,GS 18%,Starter 1,5.9
+SEA,Robbie Ray,169 IP,GS 18%,Starter 2,5.8
+SEA,Logan Gilbert,166 IP,GS 18%,Starter 3,5.7
+SEA,George Kirby,143 IP,GS 16%,Starter 4,5.5
+SEA,Marco Gonzales,145 IP,GS 16%,Starter 5,5.6
+SEA,Bryce Miller,51 IP,GS 7%,Starter,4.5
+SEA,Chris Flexen,88 IP,GS 4% RP 10%,"Starter, Long",5.3
+SEA,Emerson Hancock,22 IP,GS 3%,Starter,4.5
+SEA,Paul Sewald,59 IP,RP 11% SV 65%,Closer,0
+SEA,Andres Munoz,54 IP,RP 10% SV 25%,Setup,0
+SEA,Diego Castillo,54 IP,RP 10% SV 10%,Setup,0
+SEA,Penn Murfee,59 IP,RP 11%,Middle,0
+SEA,Matt Festa,48 IP,RP 9%,Middle,0
+SEA,Matt Brash,48 IP,RP 9%,Middle,0
+SEA,Trevor Gott,43 IP,RP 8%,Middle,0
+SEA,Justin Topa,22 IP,RP 4%,Middle,0
+SEA,Gabe Speier,22 IP,RP 4%,Middle,0
+SEA,Prelander Berroa,22 IP,RP 4%,Middle,0
+SEA,Tayler Saucedo,11 IP,RP 2%,Middle,0
+SEA,J.B. Bukauskas,11 IP,RP 2%,Middle,0
+SEA,Isaiah Campbell,11 IP,RP 2%,Middle,0
+SEA,Brennan Bernardino,11 IP,RP 2%,Middle,0
+SEA,Easton McGee,11 IP,RP 2%,Long,0
+SF,Logan Webb,165 IP,GS 17%,Starter 1,6
+SF,Alex Cobb,140 IP,GS 16%,Starter 2,5.4
+SF,Alex Wood,116 IP,GS 14%,Starter 3,5.1
+SF,Anthony DeSclafani,111 IP,GS 14%,Starter 4,4.9
+SF,Sean Manaea,125 IP,GS 14%,Starter 5,5.5
+SF,Ross Stripling,149 IP,GS 13% RP 7%,"Starter, Long",5.1
+SF,Kyle Harrison,15 IP,GS 2%,Starter,4.5
+SF,Jakob Junis,69 IP,GS 2% RP 9%,"Starter, Middle",4.9
+SF,Sean Hjelle,43 IP,GS 2% RP 5%,"Starter, Middle",4
+SF,Thomas Szapucki,31 IP,GS 2% RP 3%,"Starter, Middle",4
+SF,Sam Long,57 IP,GS 2% RP 7%,"Starter, Long",4.7
+SF,Tristan Beck,31 IP,GS 2% RP 3%,"Starter, Long",4
+SF,Camilo Doval,53 IP,RP 9% SV 85%,Closer,0
+SF,Tyler Rogers,65 IP,RP 11% SV 10%,Setup,0
+SF,Scott Alexander,41 IP,RP 7% SV 5%,Setup,0
+SF,John Brebbia,47 IP,RP 8%,Setup,0
+SF,Taylor Rogers,59 IP,RP 10%,Middle,0
+SF,Cole Waites,35 IP,RP 6%,Middle,0
+SF,Luke Jackson,35 IP,RP 6%,Middle,0
+SF,Miguel Yajure,18 IP,RP 3%,Middle,0
+SF,Randy Rodriguez,18 IP,RP 3%,Middle,0
+SF,Erik Miller,18 IP,RP 3%,Middle,0
+STL,Adam Wainwright,150 IP,GS 16%,Starter 1,5.8
+STL,Jordan Montgomery,163 IP,GS 18%,Starter 2,5.6
+STL,Miles Mikolas,181 IP,GS 18%,Starter 3,6.2
+STL,Jack Flaherty,113 IP,GS 14%,Starter 4,5
+STL,Steven Matz,117 IP,GS 16%,Starter 5,4.5
+STL,Matthew Liberatore,75 IP,GS 10%,Starter,4.6
+STL,Dakota Hudson,92 IP,GS 6% RP 7%,"Starter, Long",5.3
+STL,Connor Thomas,24 IP,GS 2% RP 2%,"Starter, Long",4
+STL,Ryan Helsley,58 IP,RP 10% SV 70%,Closer,0
+STL,Giovanny Gallegos,58 IP,RP 10% SV 30%,Setup,0
+STL,Jordan Hicks,40 IP,RP 7%,Setup,0
+STL,Genesis Cabrera,40 IP,RP 7%,Setup,0
+STL,Wilking Rodriguez,12 IP,RP 2%,Mop Up,0
+STL,Chris Stratton,58 IP,RP 10%,Middle,0
+STL,Zack Thompson,40 IP,RP 7%,Middle,0
+STL,Jake Woodford,35 IP,RP 6%,Middle,0
+STL,Drew VerHagen,29 IP,RP 5%,Middle,0
+STL,JoJo Romero,17 IP,RP 3%,Middle,0
+STL,Anthony Misiewicz,17 IP,RP 3%,Middle,0
+STL,Jake Walsh,17 IP,RP 3%,Middle,0
+STL,James Naile,12 IP,RP 2%,Middle,0
+STL,Andre Pallante,52 IP,RP 9%,Long,0
+STL,Packy Naughton,40 IP,RP 7%,Long,0
+TB,Shane McClanahan,160 IP,GS 17%,Starter 1,5.8
+TB,Tyler Glasnow,105 IP,GS 13%,Starter 2,5
+TB,Drew Rasmussen,143 IP,GS 17%,Starter 3,5.2
+TB,Jeffrey Springs,143 IP,GS 17%,Starter 4,5.2
+TB,Zach Eflin,135 IP,GS 16%,Starter 5,5.2
+TB,Josh Fleming,80 IP,GS 7% RP 6%,"Starter, Long",3.8
+TB,Yonny Chirinos,63 IP,GS 5% RP 5%,"Starter, Long",4
+TB,Taj Bradley,30 IP,GS 4%,Starter,4.7
+TB,Luis Patiño,57 IP,GS 4% RP 5%,"Starter, Middle",4
+TB,Peter Fairbanks,50 IP,RP 8% SV 40%,Closer,0
+TB,Jason Adam,56 IP,RP 9% SV 30%,Closer,0
+TB,Colin Poche,56 IP,RP 9% SV 20%,Closer,0
+TB,Jalen Beeks,56 IP,RP 9% SV 10%,Setup,0
+TB,Kevin Kelly,37 IP,RP 6%,Mop Up,0
+TB,Garrett Cleavinger,56 IP,RP 9%,Middle,0
+TB,Ryan Thompson,50 IP,RP 8%,Middle,0
+TB,Shawn Armstrong,44 IP,RP 7%,Middle,0
+TB,Colby White,37 IP,RP 6%,Middle,0
+TB,Calvin Faucher,37 IP,RP 6%,Middle,0
+TB,Trevor Kelley,25 IP,RP 4%,Middle,0
+TB,Andrew Kittredge,19 IP,RP 3%,Middle,0
+TEX,Jacob deGrom,115 IP,GS 12%,Starter 1,5.9
+TEX,Nathan Eovaldi,143 IP,GS 16%,Starter 2,5.5
+TEX,Martin Perez,163 IP,GS 18%,Starter 3,5.6
+TEX,Jon Gray,140 IP,GS 16%,Starter 4,5.4
+TEX,Andrew Heaney,118 IP,GS 14%,Starter 5,5.2
+TEX,Dane Dunning,103 IP,GS 9% RP 5%,"Starter, Long",5.1
+TEX,Jake Odorizzi,82 IP,GS 6% RP 6%,"Starter, Long",4.9
+TEX,Cole Ragans,51 IP,GS 3% RP 5%,"Starter, Long",4.7
+TEX,Cole Winn,15 IP,GS 2%,Starter,4.5
+TEX,Spencer Howard,38 IP,GS 2% RP 4%,"Starter, Middle",4.6
+TEX,Glenn Otto,28 IP,GS 2% RP 2%,"Starter, Long",5
+TEX,Jose Leclerc,51 IP,RP 9% SV 70%,Closer,0
+TEX,Jonathan Hernandez,51 IP,RP 9% SV 20%,Setup,0
+TEX,Brock Burke,69 IP,RP 12% SV 10%,Long,0
+TEX,Josh Sborz,51 IP,RP 9%,Middle,0
+TEX,Will Smith,51 IP,RP 9%,Middle,0
+TEX,Joe Barlow,40 IP,RP 7%,Middle,0
+TEX,John King,34 IP,RP 6%,Middle,0
+TEX,Yerry Rodriguez,23 IP,RP 4%,Middle,0
+TEX,Brett Martin,11 IP,RP 2%,Middle,0
+TEX,Taylor Hearn,51 IP,RP 9%,Long,0
+TEX,Zak Kent,11 IP,RP 2%,Long,0
+TOR,Kevin Gausman,166 IP,GS 18%,Starter 1,5.7
+TOR,Alek Manoah,175 IP,GS 18%,Starter 2,6
+TOR,Chris Bassitt,160 IP,GS 17%,Starter 3,5.8
+TOR,Jose Berrios,145 IP,GS 16%,Starter 4,5.6
+TOR,Yusei Kikuchi,99 IP,GS 12% RP 2%,"Starter 5, Long",4.5
+TOR,Hyun-Jin Ryu,38 IP,GS 5%,Starter,4.7
+TOR,Mitchell White,61 IP,GS 4% RP 6%,"Starter, Long",4.1
+TOR,Ricky Tiedemann,14 IP,GS 2%,Starter,4.2
+TOR,Nate Pearson,49 IP,GS 2% RP 6%,"Starter, Middle",4.4
+TOR,Trevor Richards,53 IP,GS 2% RP 8%,"Starter, Long",2
+TOR,Yosver Zulueta,25 IP,GS 2% RP 2%,"Starter, Long",4.2
+TOR,Thomas Hatch,26 IP,GS 2% RP 2%,"Starter, Long",4.5
+TOR,Jordan Romano,58 IP,RP 10% SV 85%,Closer,0
+TOR,Adam Cimber,64 IP,RP 11% SV 10%,Setup,0
+TOR,Anthony Bass,58 IP,RP 10% SV 5%,Setup,0
+TOR,Yimi Garcia,58 IP,RP 10%,Middle,0
+TOR,Erik Swanson,52 IP,RP 9%,Middle,0
+TOR,Tim Mayza,46 IP,RP 8%,Middle,0
+TOR,Zach Pop,35 IP,RP 6%,Middle,0
+TOR,Junior Fernandez,12 IP,RP 2%,Middle,0
+TOR,Chad Green,12 IP,RP 2%,Middle,0
+TOR,Zach Thompson,23 IP,RP 4%,Long,0
+TOR,Trent Thornton,12 IP,RP 2%,Long,0
+WAS,Josiah Gray,155 IP,GS 18%,Starter 1,5.3
+WAS,Patrick Corbin,135 IP,GS 17%,Starter 2,4.9
+WAS,MacKenzie Gore,97 IP,GS 12%,Starter 3,5
+WAS,Trevor Williams,119 IP,GS 12% RP 5%,"Starter 4, Long",4.4
+WAS,Chad Kuhl,93 IP,GS 12%,Starter 5,4.8
+WAS,Joan Adon,73 IP,GS 10%,Starter,4.5
+WAS,Paolo Espino,91 IP,GS 7% RP 6%,"Starter, Long",4.5
+WAS,Cory Abbott,75 IP,GS 6% RP 5%,"Starter, Long",4.3
+WAS,Stephen Strasburg,31 IP,GS 4%,Starter,4.8
+WAS,Jake Irvin,14 IP,GS 2%,Starter,4.2
+WAS,Kyle Finnegan,60 IP,RP 9% SV 75%,Closer,0
+WAS,Carl Edwards Jr.,60 IP,RP 9% SV 20%,Setup,0
+WAS,Hunter Harvey,53 IP,RP 8% SV 5%,Middle,0
+WAS,Thad Ward,46 IP,RP 7%,Mop Up,0
+WAS,Erasmo Ramirez,60 IP,RP 9%,Middle,0
+WAS,Victor Arano,60 IP,RP 9%,Middle,0
+WAS,Mason Thompson,53 IP,RP 8%,Middle,0
+WAS,Jordan Weems,46 IP,RP 7%,Middle,0
+WAS,Matt Cronin,40 IP,RP 6%,Middle,0
+WAS,Hobie Harris,27 IP,RP 4%,Middle,0
+WAS,Anthony Banda,20 IP,RP 3%,Middle,0
+WAS,Zach Brzykcy,20 IP,RP 3%,Middle,0
+WAS,Andres Machado,13 IP,RP 2%,Middle,0
