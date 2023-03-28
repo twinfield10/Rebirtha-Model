@@ -2261,6 +2261,127 @@ Get_Long_BOL <- function(dt) {
   
   return(df)
 }
+Compare_Long_BOL <- function(dt, gid_filter){
+  
+  long_final_df <- Get_Long_BOL(dt = Sys.Date())
+  
+  ## Get Schedule For Today ##  
+  g_filt <- gid_filter
+  sched <-  if(length(g_filt) > 0 ){
+    good_pks <- mlb_api_pitchers %>% na.omit() %>% select(game_pk) %>% unique() %>% pull()
+    
+    df <- daily_schedule(dt = dt) %>%
+      mutate(
+        teams.home.team.id = as.character(teams.home.team.id),
+        teams.away.team.id = as.character(teams.away.team.id)
+      ) %>%
+      filter(game_pk %notin% g_filt & game_pk %in% good_pks) %>%
+      mutate(game_pk = as.character(game_pk))
+    
+    df
+  } else {
+    good_pks <- mlb_api_pitchers %>% na.omit() %>% select(game_pk) %>% unique() %>% pull()
+    
+    df <- daily_schedule(dt = dt) %>%
+      mutate(
+        teams.home.team.id = as.character(teams.home.team.id),
+        teams.away.team.id = as.character(teams.away.team.id)
+      ) %>%
+      filter(game_pk %in% good_pks) %>%
+      mutate(game_pk = as.character(game_pk)) #%>%
+    #na.omit()
+    
+    df
+  }
+  
+  ## GET PROSPECTIVE REBIRTHA CALC TO RETURN BEST LINES WITH TIME STAMP ##  
+  
+  sched_len <- length(sched$game_pk)
+  listofdfs <- list()
+  for(i in 1:sched_len) {
+    gid <- sched[i,1]
+    g <- wp_calc(gid)
+    listofdfs[[i]] <- g
+  }
+  bets <- bind_rows(listofdfs) %>%
+    mutate(
+      game_id = as.character(game_id),
+      home_team = as.character(home_team),
+      away_team = as.character(away_team)
+    )
+  
+  loc_vec <- c("Home", "Away")
+  n = length(bets$game_id)
+  
+  bets_long <- data.frame(
+    game_pk = c(bets$game_id, bets$game_id),
+    team = c(bets$home_team, bets$away_team),
+    Rebirtha_Odds = c(bets$home_ML_odds, bets$away_ML_odds),
+    loc = c(rep(loc_vec, each = n)),
+    stringsAsFactors = FALSE
+  )
+  #print(bets_long)
+  #print(long_final_df)
+  #print(sched)
+  
+  # Add gameNumber #
+  bets_long <- bets_long %>%
+    left_join(sched %>% select(game_pk, gameNumber), by = c('game_pk'))
+  
+  #print(bets_long)
+  ## Join Bets to scrape to get best lines ##
+  find_biggest_advantages <- long_final_df %>%
+    left_join(bets_long, by = c('team', 'gameNumber')) %>%
+    mutate(
+      BOL_ImpOdds = if_else(Moneyline > 0,
+                            100/(Moneyline+100),
+                            abs(Moneyline)/(abs(Moneyline)+100)),
+      Rebirtha_ImpOdds = if_else(Rebirtha_Odds > 0,
+                                 100/(Rebirtha_Odds+100),
+                                 abs(Rebirtha_Odds)/(abs(Rebirtha_Odds)+100)),
+      Rebirtha_Advantage = Rebirtha_ImpOdds - BOL_ImpOdds
+    ) %>%
+    group_by(game_pk) %>%
+    mutate(
+      best_bet_adv = max(Rebirtha_Advantage)
+    ) %>%
+    filter(best_bet_adv == Rebirtha_Advantage) %>%
+    distinct(Time_EST, GM_ID, Team, Moneyline, site, f_gid_vec, date, gameNumber,loc,
+             TeamID, team, game_pk, Rebirtha_Odds, BOL_ImpOdds, Rebirtha_ImpOdds, Rebirtha_Advantage,
+             best_bet_adv, .keep_all = TRUE) %>%
+    ungroup() %>%
+    select(game_pk, Pull_ID) %>%
+    mutate(
+      pk_pull_combo = paste0(game_pk, '-', Pull_ID)
+    ) %>%
+    select(pk_pull_combo) %>%
+    pull()
+  
+  #print(find_biggest_advantages)
+  
+  final_odds_df <- long_final_df %>%
+    left_join(bets_long %>% select(game_pk, team, gameNumber), by = c('team', 'gameNumber')) %>%
+    mutate(
+      pk_pull_combo = paste0(game_pk, '-', Pull_ID)
+    ) %>%
+    filter(pk_pull_combo %in% find_biggest_advantages) %>%
+    select(game_pk, Time_EST, date, team, Moneyline, gameNumber, BetTimeStamp, site) %>%
+    rename(Time_Local = Time_EST,
+           Date = date) %>%
+    pivot_wider(
+      names_from = site,
+      values_from = c(team, Moneyline)
+    ) %>%
+    rename(
+      home_team = team_Home,
+      betonline_home = Moneyline_Home,
+      away_team = team_Away,
+      betonline_away = Moneyline_Away
+    ) %>%
+    select(Time_Local, Date, home_team, betonline_home, away_team, betonline_away, gameNumber, BetTimeStamp)
+  
+  return(final_odds_df)
+}
 
 
 ## Scrape Lineups And Pitchers From MLB API
