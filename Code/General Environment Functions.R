@@ -1891,7 +1891,7 @@ build_cols <- function() {
   )
   mlb_cols$team_full <- row.names(mlb_cols)
   mlb_cols <- mlb_cols %>% select(team_full, prim_col, sec_col)
-  team_abbr <- unique(teamabbr$bp_teamabbr)
+  team_abbr <- unique(H_WAR_Percentile_Pos_long$team)
   mlb_cols$team <- team_abbr
   mlb_cols <- mlb_cols %>%
     mutate(
