@@ -2,7 +2,6 @@
 
 ## Build Reference Table ##
 teamabbr <- teamabbr_build()
-col_scheme <- build_cols()
 
 #### PECOTA LOAD ####
 
@@ -255,3 +254,4 @@ all_div = sort(c("AL West", "AL Central", "AL East", "NL West", "NL Central", "N
 all_pos = sort(unique(full_team_pos_ptile_long$position))
 APP_RefTbl <- gen_info_build()
 Pitch_LB <- load_2022_stats(20230321)
+col_scheme <- build_cols()
