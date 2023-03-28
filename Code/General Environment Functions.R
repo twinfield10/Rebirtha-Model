@@ -1870,6 +1870,29 @@ RS_Col_Func <- function(x) {
                                                                                                                                        ifelse(x < 100 & x >= 90, "#239054",
                                                                                                                                               ifelse(x >= 100, "#1e7b48", NA)))))))))))))))))))))
 }
+RA_Col_Func <- function(x) {
+  ifelse(x < -100, "#1e7b48",
+         ifelse(x < -90 & x >= -100, "#239054",
+                ifelse(x < -80 & x >= -90,"#28a460",
+                       ifelse(x < -70 & x >= -80, "#2db96c",
+                              ifelse(x < -60 & x >= -70, "#2db96c",
+                                     ifelse(x < -50 & x >= -60, "#6fdca0",
+                                            ifelse(x < -40 & x >= -50, "#98e6bb",
+                                                   ifelse(x < -30 & x >= -40, "#c1f0d6",
+                                                          ifelse(x < -20 & x >= -30, "#98E6BB",
+                                                                 ifelse(x < -10 & x >= -20, "#eafaf1",
+                                                                        ifelse(x >= -10 & x <= 10, "#ffffff",
+                                                                               ifelse(x < 20 & x > 10, "#ffe6e6",
+                                                                                      ifelse(x < 30 & x >= 20,  "#ffcccc",
+                                                                                             ifelse(x < 40 & x >= 30, "#ffb3b3",
+                                                                                                    ifelse(x < 50 & x >= 40, "#ff9999",
+                                                                                                           ifelse(x < 60 & x >= 50, "#ff8080",
+                                                                                                                  ifelse(x < 70 & x >= 60, "#ff6666",
+                                                                                                                         ifelse(x < 80 & x >= 70,  "#ff4d4d",
+                                                                                                                                ifelse(x < 90 & x >= 80,  "#ff3333",
+                                                                                                                                       ifelse(x < 100 & x >= 90,"#ff1a1a",
+                                                                                                                                              ifelse(x >= 100, "#ff0000", NA)))))))))))))))))))))
+}
 Adv_Scale <- function(x) {
   ifelse(x >= .15, "#1e7b48",
           ifelse(x >= .10 & x < .15, "#28a460",
