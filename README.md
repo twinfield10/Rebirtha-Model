@@ -2,7 +2,7 @@
   ### <div align="center">*"I know a town where real life's a game. Baseball's all that's real"*<div align="center"> ###
 ![RebirthaLogo](RebirthaLogo.png)
 
-  ## 2023 YTD Metrics (As of 6/13/2023) - Based on $1,000 Bankroll ##
+  ## 2023 YTD Metrics (As of 6/13/2023) ##
   
   | Win-Loss | Win % | Exp. Win % (Avg. Odds) | Win % +/- | Bankroll Increase |
   |:--------:|:-----:|:----------------------:|:---------:|:-----------------:|
