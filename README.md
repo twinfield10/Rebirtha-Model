@@ -2,11 +2,11 @@
   ### <div align="center">*"I know a town where real life's a game. Baseball's all that's real"*<div align="center"> ###
 ![RebirthaLogo](RebirthaLogo.png)
 
-  ## 2023 YTD Metrics (As of 7/24/2023) ##
+  ## 2023 YTD Metrics (As of 8/7/2023) ##
   
   | Win-Loss | Win % | Exp. Win % (Avg. Odds) | Win % +/- | Bankroll Increase |
   |:--------:|:-----:|:----------------------:|:---------:|:-----------------:|
-  |386-308   |55.62% |50.74% (-103)           |+4.88%     |+259.69%           |
+  |427-332   |56.26% |50.99% (-104.02)        |+5.27%     |+308.58%           |
   
   ## What's the Goal? ##
 Code in this repository will aim to predict the winner of every single baseball game in the MLB using a variety of sources and models. The outcome of this game will then be compared to the implied probability of a moneyline. If the advantage is significant, the model's outcome will trigger a bet on my end. Significant value is calculated by taking the Rebirtha Model's probability of winning a given game and subtracting the value derived from the moneyline's implied probability. Bets will be place in proporition to the degree in which the model's probability is greater than the moneyline's probability.
