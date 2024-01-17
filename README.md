@@ -2,27 +2,28 @@
   ### <div align="center">*"I know a town where real life's a game. Baseball's all that's real"*<div align="center"> ###
 ![RebirthaLogo](RebirthaLogo.png)
 
-## <div align="center">2023 Season Metrics<div align="center"> ##
+## <div align="center">2023 Season Final Results<div align="center"> ##
   
-<div style="text-align:center">
-
+<div style="text-align:center", align="center">
+  
 | Win-Loss | Win % | Exp. Win % (Avg. Odds) | Win % +/- | Bankroll Increase |
 |:--------:|:-----:|:----------------------:|:---------:|:-----------------:|
 |613-457   |57.29% |51.54% (-106)           |+5.75%     |+545.6%            |
 
 </div>
 
-  #### By Month
+  ### By Month
 <div align="center">
-  <img src="https://github.com/twinfield10/Rebirtha-Model/assets/46075366/e84ab34a-9f83-48b1-8df1-a584b68d8ac1" alt="Monthly Chart">
+  <img src="https://github.com/twinfield10/Rebirtha-Model/assets/46075366/411f244a-9888-426f-a20f-2dd0294fdb00" alt="Monthly Chart">
 </div>
 
-  #### By Day
+
+  ### By Day
   <div align="center">
   <img src="https://github.com/twinfield10/Rebirtha-Model/assets/46075366/44a07612-a44a-4b25-9e90-2f067e360d64" alt="Final_Daily-Results">
 </div>
 
-  #### By Team
+  ### By Team
   <div align="center">
   <img src="https://github.com/twinfield10/Rebirtha-Model/assets/46075366/cb7a0e96-53f9-440d-adae-827900863034" alt="Final_Team_Results">
 </div>
