@@ -64,20 +64,18 @@ I scrape data from [ESPNs Transactions page](https://www.espn.com/mlb/transactio
 I won't get too much into the weeds here since the model is proprietary. However, I will explain the theory behind how the model is set up using the data provided above.
   
   #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Standardizing Team Strength ####
-To begin, I need to find the totals of WAR values by position for each team. I use Baseball Prospectus's PECOTA projections to put together a likely depth chart and how much WAR a team is likely to produce at certain position. The data is provided in percentiles and from these distributions, I can put together an estimate for how much WAR a team can reasonably expect to accumulate over the course of a season. Below is an example of what that looks like for a couple teams in 2023:
+To begin, I need to find the totals of WAR values by position for each team. I use Baseball Prospectus's PECOTA player projections and depth charts to aggregate how many WAR a team is likely to produce at certain position. The data is provided in percentiles and from these distributions, I can put together an estimate for how much WAR a team can reasonably expect to accumulate over the course of a season. Below is an example of what that looks like for a couple teams in 2023 at the start of the season:
 
 
 #### <div align="center">Position Players<div align="center"> ####
+
 <div align="center"><img src="Charts/Team WAR/Batters/WAR Distribution - Position Players - OAK.png"  width="95%" height="95%"><div align="center">
-  
+
   
 <div align="center"><img src="Charts/Team WAR/Batters/WAR Distribution - Position Players - TB.png"  width="95%" height="95%"><div align="center">
-  
-<div align="center"><img src="Charts/Team WAR/Batters/WAR Distribution - Position Players - BAL.png"  width="95%" height="95%"><div align="center">
+
   
   #### <div align="center">Pitchers<div align="center"> ####
-<div align="center"><img src="Charts/Team WAR/Pitchers/WAR Distribution - Pitchers - ATL.png"  width="95%" height="95%"><div align="center">
-  
   
 <div align="center"><img src="Charts/Team WAR/Pitchers/WAR Distribution - Pitchers - HOU.png"  width="95%" height="95%"><div align="center">
   
@@ -105,7 +103,7 @@ To begin, I need to find the totals of WAR values by position for each team. I u
   
   WOW! Reynolds is worth over 3 wins in a 162 game season compared to a backup player! That's a lot! I thought that you said it wasn't a big difference!? What does that mean for the adjustment??
   
-  In reality, yes, this difference is a lot and it is the reason that the Pirates should be smart and extend Reynolds if they want any shot at success. However for this model, I aim to attack biases like these in a betting market. Among gamblers, position players (with maybe the exception of Judge and Trout) cannot affect a single game as much as other players (i.e., pitchers) can. While Reynolds is worth 3 wins (or 30 runs) more than his backup in a 162 game season, there is only 4/5 plate appearances per game for these players and when the CF only makes up 1/9 of a lineup, the difference between the two values is marginal at best. This difference also only comes into play if Reynolds plays over 80% of games in a season. If he were to play more, the CF WAR would increase at a rate proportional to the percent of games he plays over 80%. For every 16.2 games (10% of season) over 80% that Reynolds plays in CF, he will increase the total CF WAR by 0.35. For every 16.2 games that his backup plays over 20%, they will increase the CF WAR by 0.05. The 0.3 WAR difference per 10 games is only 0.03 per game. In this model, I assume that 1 win is equal to 10 runs. I will get more into the assumption below, but for now, this means that the difference on a per game basis (over or under the allotted 80% of games) is only 0.3 runs. While that is a more significant difference than other positions, Reynolds may also be playing another position in that lineup so the adjustment would really be between the playerin CF and the player that Reynolds displaced in another position.
+  In reality, yes, this difference is significant and it is the reason that the Pirates should be smart and extend Reynolds if they want any shot at success. However for this model, I aim to attack biases like these in a betting market. Among gamblers, position players (with maybe the exception of Judge and Trout) cannot affect a single game as much as other players (i.e., pitchers) can. While Reynolds is worth 3 wins (or 30 runs) more than his backup in a 162 game season, there are only 4/5 plate appearances per game for a player and when the CF only makes up 1/9 of a lineup, the difference between the two values is marginal at best. This difference also only comes into play if Reynolds plays over 80% of games in a season. If he were to play more, the CF WAR would increase at a rate proportional to the percent of games he plays over 80%. For every 16.2 games (10% of season) over 80% that Reynolds plays in CF, he will increase the total CF WAR by 0.35. For every 16.2 games that his backup plays over 20%, they will increase the CF WAR by 0.05. The 0.3 WAR difference per 10 games is only 0.03 per game. In this model, I assume that 1 win is equal to 10 runs. I will get more into the assumption below, but for now, this means that the difference on a per game basis (over or under the allotted 80% of games) is only 0.3 runs. While that is a more significant difference than other positions, Reynolds may also be playing another position in that lineup so the adjustment would really be between the playerin CF and the player that Reynolds displaced in another position.
   
   
   ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Rotating Cast of Characters:
@@ -190,7 +188,7 @@ Now obviously, both teams cannot win and both teams cannot lose. So we can elimi
 To compare to a moneyline, we need to convert American odds (-110, -200 +115, etc.) to a probability. You can use this calculator [here](https://www.gamingtoday.com/tools/implied-probability/) to play around with certain odds. An implied probability is the implied winning percentage for a given team in a game using gambling markets. When a book sets a price, we are able to use that implied probability to compare to my win percentages above.
   
   
-  Using our example from above, let's say that Toronto are heavy favorites at -300 and Pittsburgh are +270 underdogs (don't worry, they're used to it). Converting these values to implied probability we get an implied probability of 75.00% for Toronto winning the game and 27.03% chance Pittsburgh wins this game according to the market. Below is a table showing the comparison of Rebirtha's probability to Vegas.
+  Using our example from above, let's say that Toronto are heavy favorites at -300 and Pittsburgh are +270 underdogs. Converting these values to implied probability we get an implied probability of 75.00% for Toronto winning the game and 27.03% chance Pittsburgh wins this game according to the market. Below is a table showing the comparison of Rebirtha's probability to Vegas.
   
   
   *If Rebirtha Prob > Vegas Prob, then we have found value and will place a bet. The size of the bet is determined by using an algorithm that optimizes a bettor's long-term bankroll increase (or long-term returns)*
@@ -206,4 +204,4 @@ To compare to a moneyline, we need to convert American odds (-110, -200 +115, et
   ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) Conclusion ###
   
   
-  Essentially, this method of evaluating baseball games has been decently successful in the past and my hope is that I can implement changes every year to either improve the underlying data, my calculations, and/or the automation of certain processes. This model has taken various forms in Excel and Google Sheets, but I believe R has been the way to go in keeping this model running smoothly throughout the year and for many years to come. If you would like to know more or be included in my group chat where I send picks every day, please reach out and I will be more than happy to talk about the Rebirtha Model. Here's to a beautiful 2023 season! Best of luck!
+  Essentially, this method of evaluating baseball games has been decently successful in the past and my hope is that I can implement changes every year to either improve the underlying data, my calculations, and/or the automation of certain processes. This model has taken various forms in Excel and Google Sheets, but I believe R has been the way to go in keeping this model running smoothly throughout the year and for many years to come.
