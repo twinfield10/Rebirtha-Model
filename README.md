@@ -1,6 +1,9 @@
 # <div align="center">The Rebirtha Model<div align="center"> #
   ### <div align="center">*"I know a town where real life's a game. Baseball's all that's real"*<div align="center"> ###
-![RebirthaLogo](RebirthaLogo.png)
+  
+<div align="center"><img src="https://github.com/twinfield10/Rebirtha-Model/assets/46075366/b8668daf-473b-4cef-9909-0d756dce3c7e"  width="75%" height="75%"></div>
+
+
 
 ## <div align="center">2023 Season Final Results<div align="center"> ##
   
@@ -33,12 +36,12 @@
   
   ## What's the Goal? ##
 By creating this model I will aim to create a more accurate win percentage than sportsbooks for each baseball team in each MLB game using a variety of sources and models. In assuming that my model is more accurate at predicting the result of an MLB game, the model's outcome will trigger a bet on my end. Bets will be place in proporition to the degree in which the model's probability is greater than the moneyline's probability. The goal is to maintain long-term success by consistently beating the sports betting market by eliminating recency bias and relying on advances statistical techniques.
-  
-  ## How Does It Work? ##
-There are a variety of calculations and inputs from various sources that go into creating the model. Below I will outline the process of converting raw data availale on the internet into wagers being placed.
 
   ## Where is the Code? ##
 I have decided to keep my code propriatary for now. In the sports gambling world, everyone looks for an edge. As I have found my advantage, I will be keeping it under wraps for now. Please feel free to contact me if you have any questions or comments.
+  
+  ## How Does It Work? ##
+There are a variety of calculations and inputs from various sources that go into creating the model. Below I will outline the process of converting raw data availale on the internet into wagers being placed.
 
   ### 1) Data Collection ###
   
@@ -69,18 +72,23 @@ To begin, I need to find the totals of WAR values by position for each team. I u
 
 #### <div align="center">Position Players<div align="center"> ####
 
-<div align="center"><img src="Charts/Team WAR/Batters/WAR Distribution - Position Players - OAK.png"  width="95%" height="95%"><div align="center">
+<div align="center"><img src="https://github.com/twinfield10/Rebirtha-Model/assets/46075366/c4bef7cb-cfbd-40af-a465-d74fca9f3fc4"  width="95%" height="95%"><div align="center">
+
 
   
-<div align="center"><img src="Charts/Team WAR/Batters/WAR Distribution - Position Players - TB.png"  width="95%" height="95%"><div align="center">
+<div align="center"><img src="https://github.com/twinfield10/Rebirtha-Model/assets/46075366/bddc1262-5c9b-45b0-93d8-81a381569901"  width="95%" height="95%"><div align="center">
+
+
 
   
   #### <div align="center">Pitchers<div align="center"> ####
   
-<div align="center"><img src="Charts/Team WAR/Pitchers/WAR Distribution - Pitchers - HOU.png"  width="95%" height="95%"><div align="center">
+<div align="center"><img src="https://github.com/twinfield10/Rebirtha-Model/assets/46075366/dc629b09-30ff-4cc2-bebf-79ff5154926c"  width="95%" height="95%"><div align="center">
+
+
   
-  
-<div align="center"><img src="Charts/Team WAR/Pitchers/WAR Distribution - Pitchers - PIT.png"  width="95%" height="95%"><div align="center">
+<div align="center"><img src="https://github.com/twinfield10/Rebirtha-Model/assets/46075366/6fae8e22-ecd9-4cab-9ad2-c25df2673bd4"  width="95%" height="95%"><div align="center">
+
   
 <div align="left">When put all together, I am able to create a distribution of what the entire team will look like given an average season to create a WAR distribution for each team. Assuming the distribution for the value of WAR to be equal to the total number of wins that a team will end up with, I can then use this mean as a basis for a teams final record which will be used to calculate single game odds. In 2023, I want to use the distribution of WAR for each team to create a variance metric that will help to identify more/less risk than a mean value of WAR, which I have done in the past.<div align="left">
   
