@@ -1,19 +1,44 @@
-# <div align="center">Rebirtha Model<div align="center"> #
+# <div align="center">The Rebirtha Model<div align="center"> #
   ### <div align="center">*"I know a town where real life's a game. Baseball's all that's real"*<div align="center"> ###
 ![RebirthaLogo](RebirthaLogo.png)
 
-  ## 2023 YTD Metrics (As of 8/17/2023) ##
+## <div align="center">2023 Season Metrics<div align="center"> ##
   
-  | Win-Loss | Win % | Exp. Win % (Avg. Odds) | Win % +/- | Bankroll Increase |
-  |:--------:|:-----:|:----------------------:|:---------:|:-----------------:|
-  |461-350   |56.84% |51.25% (-105)           |+5.59%     |+404.76%           |
+<div style="text-align:center">
+
+| Win-Loss | Win % | Exp. Win % (Avg. Odds) | Win % +/- | Bankroll Increase |
+|:--------:|:-----:|:----------------------:|:---------:|:-----------------:|
+|613-457   |57.29% |51.54% (-106)           |+5.75%     |+545.6%            |
+
+</div>
+
+  #### By Month
+<div align="center">
+  <img src="https://github.com/twinfield10/Rebirtha-Model/assets/46075366/e84ab34a-9f83-48b1-8df1-a584b68d8ac1" alt="Monthly Chart">
+</div>
+
+  #### By Day
+  <div align="center">
+  <img src="https://github.com/twinfield10/Rebirtha-Model/assets/46075366/44a07612-a44a-4b25-9e90-2f067e360d64" alt="Final_Daily-Results">
+</div>
+
+  #### By Team
+  <div align="center">
+  <img src="https://github.com/twinfield10/Rebirtha-Model/assets/46075366/cb7a0e96-53f9-440d-adae-827900863034" alt="Final_Team_Results">
+</div>
+
+
+  # Model Methodlology
   
   ## What's the Goal? ##
-Code in this repository will aim to predict the winner of every single baseball game in the MLB using a variety of sources and models. The outcome of this game will then be compared to the implied probability of a moneyline. If the advantage is significant, the model's outcome will trigger a bet on my end. Significant value is calculated by taking the Rebirtha Model's probability of winning a given game and subtracting the value derived from the moneyline's implied probability. Bets will be place in proporition to the degree in which the model's probability is greater than the moneyline's probability.
+By creating this model I will aim to create a more accurate win percentage than sportsbooks for each baseball team in each MLB game using a variety of sources and models. In assuming that my model is more accurate at predicting the result of an MLB game, the model's outcome will trigger a bet on my end. Bets will be place in proporition to the degree in which the model's probability is greater than the moneyline's probability. The goal is to maintain long-term success by consistently beating the sports betting market by eliminating recency bias and relying on advances statistical techniques.
   
   ## How Does It Work? ##
 There are a variety of calculations and inputs from various sources that go into creating the model. Below I will outline the process of converting raw data availale on the internet into wagers being placed.
-  
+
+  ## Where is the Code? ##
+I have decided to keep my code propriatary for now. In the sports gambling world, everyone looks for an edge. As I have found my advantage, I will be keeping it under wraps for now. Please feel free to contact me if you have any questions or comments.
+
   ### 1) Data Collection ###
   
   #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Individual Player Projections ####
@@ -23,7 +48,7 @@ Before the season starts, I collect projected WAR values and projected playing t
 I scrape lineups every morning from [BaseballMonster.com](https://baseballmonster.com/lineups.aspx), a popular fantasy baseball resource, and join these to the projections to match players in a starting lineup to their WAR projections. This source has been a bit iffy but I like it because it does attempt to predict the starting lineups for every game before they are confirmed, allowing me to hop on early lines for games later in the day.
   
   #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c) Gambling Lines ####
-This has been a trickier thing to standardize and I hope to include multiple sportsbooks in the future. As for now, the lines are scraped from my personal book that I use daily.
+This has been a trickier thing to standardize and I hope to include multiple sportsbooks in the future. As for now, the lines are scraped from a book that I use.
   
   #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d) Injuries and Suspensions ####
 I scrape data from [SportTrac](https://www.spotrac.com/mlb/disabled-list/") regarding which players are on the DL and for how long. With the MLB and their usage of the 10-Day DL and 60-Day DL classification, it helps to adjust my season long projections that are used as a basis for a team's strength as I assume that 60-Day DL players are either not going to play the rest of the year or will be out a significant portion of the year. I manually input flags for players that have been ruled out for hte entire year to adjust team strength values.
@@ -167,7 +192,7 @@ To compare to a moneyline, we need to convert American odds (-110, -200 +115, et
   Using our example from above, let's say that Toronto are heavy favorites at -300 and Pittsburgh are +270 underdogs (don't worry, they're used to it). Converting these values to implied probability we get an implied probability of 75.00% for Toronto winning the game and 27.03% chance Pittsburgh wins this game according to the market. Below is a table showing the comparison of Rebirtha's probability to Vegas.
   
   
-  *If Rebirtha Prob > Vegas Prob, then we have found value and will place a bet. The size of the bet is determined by the magnitude of the difference*
+  *If Rebirtha Prob > Vegas Prob, then we have found value and will place a bet. The size of the bet is determined by using an algorithm that optimizes a bettor's long-term bankroll increase (or long-term returns)*
   
   
   
