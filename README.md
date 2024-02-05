@@ -35,10 +35,10 @@
   # Model Methodlology
   
   ## What's the Goal? ##
-By creating this model I will aim to create a more accurate win percentage than sportsbooks for each baseball team in each MLB game using a variety of sources and models. In assuming that my model is more accurate at predicting the result of an MLB game, the model's outcome will trigger a bet on my end. Bets will be place in proporition to the degree in which the model's probability is greater than the moneyline's probability. The goal is to maintain long-term success by consistently beating the sports betting market by eliminating recency bias and relying on advances statistical techniques.
+To create a more accurate win percentage than sportsbooks for each baseball team in each MLB game using a variety of sources and models. In assuming that my model is more accurate at predicting the result of an MLB game, the model's outcome will trigger a bet on my end. Bets will be place in proporition to the degree in which the model's probability is greater than the moneyline's probability. The goal is to maintain long-term success by consistently beating the sports betting market by eliminating recency bias and relying on advanced statistical techniques.
 
   ## Where is the Code? ##
-I have decided to keep my code propriatary for now. In the sports gambling world, everyone looks for an edge. As I have found my advantage, I will be keeping it under wraps for now. Please feel free to contact me if you have any questions or comments.
+I have decided to keep my code proprietary for now. In the sports gambling world, everyone looks for an edge. As I have found my advantage, I will be keeping it under wraps for now. Please feel free to contact me if you have any questions or comments.
   
   ## How Does It Work? ##
 There are a variety of calculations and inputs from various sources that go into creating the model. Below I will outline the process of converting raw data availale on the internet into wagers being placed.
@@ -55,10 +55,10 @@ I scrape lineups every morning from [BaseballMonster.com](https://baseballmonste
 This has been a trickier thing to standardize and I hope to include multiple sportsbooks in the future. As for now, the lines are scraped from a book that I use.
   
   #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d) Injuries and Suspensions ####
-I scrape data from [SportTrac](https://www.spotrac.com/mlb/disabled-list/") regarding which players are on the DL and for how long. With the MLB and their usage of the 10-Day DL and 60-Day DL classification, it helps to adjust my season long projections that are used as a basis for a team's strength as I assume that 60-Day DL players are either not going to play the rest of the year or will be out a significant portion of the year. I manually input flags for players that have been ruled out for hte entire year to adjust team strength values.
+I scrape data from [SportTrac](https://www.spotrac.com/mlb/disabled-list/") regarding which players are on the DL and for how long. With the MLB and their usage of the 10-Day DL and 60-Day DL classification, it helps to adjust my season long projections that are used as a basis for a team's strength as I assume that 60-Day DL players are either not going to play the rest of the year or will be out a significant portion of the year. I manually input flags for players that have been ruled out for the entire year to adjust team strength values.
   
   #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e) ClusterLuck ####
-In the past, I have used [The Power Rank](https://thepowerrank.com/cluster-luck/) as my source for cluster luck values. However, since they do not update these values daily any more, I have turned to [Fangraph's Base Runs](https://www.fangraphs.com/depthcharts.aspx?position=BaseRuns) metric to adjust for cluster luck. What is cluster luck you may ask? Essentially it is a metric of how many runs a team *should* have scored/given up based on a simple run expectancies matrix. This accounts for good and bad luck with runners on base. This adjustment is crucial to the model as it adjust for variance in-season that many other bettors do not take into account when looking at future performance. To learn more about cluster luch, please read more [here](https://library.fangraphs.com/features/baseruns/).
+In the past, I have used [The Power Rank](https://thepowerrank.com/cluster-luck/) as my source for cluster luck values. However, since they do not update these values daily any more, I have turned to [Fangraph's Base Runs](https://www.fangraphs.com/depthcharts.aspx?position=BaseRuns) metric to adjust for cluster luck. What is cluster luck you may ask? Essentially it is a metric of how many runs a team *should* have scored/given up based on a simple run expectancies matrix. This accounts for good and bad luck with runners on base. This adjustment is crucial to the model as it adjust for variance in-season that many other bettors do not take into account when looking at future performance. To learn more about cluster luck, please read more [here](https://library.fangraphs.com/features/baseruns/).
   
   #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f) Trades and Transactions ####
 I scrape data from [ESPNs Transactions page](https://www.espn.com/mlb/transactions) to change a player's team within my projections to adjust a team's total strength. This is updated when trades are made official and it is run before every day to ensure that each team's rosters are completely up to date.
@@ -120,7 +120,7 @@ To begin, I need to find the totals of WAR values by position for each team. I u
   
   
   
-  With all of this being said, I have implemented a feature in 2023 that will capture these small difference to make the model even more accurate. I had not done so in the past because the difference were small and I had not created a function that would accomodate for these issues. Below, I will go into detail about the adjustments made for pitchers. THe theory is the same, but the numerical difference are much more significant given the large(er) role that pitchers play in the game of baseball.
+  With all of this being said, I have implemented a feature in 2023 that will capture these small difference to make the model even more accurate. I had not done so in the past because the differences were small and I had not created a function that would accomodate for these issues. Below, I will go into detail about the adjustments made for pitchers. THe theory is the same, but the numerical difference are much more significant given the large(er) role that pitchers play in the game of baseball.
   
   
   
@@ -131,7 +131,7 @@ To begin, I need to find the totals of WAR values by position for each team. I u
   
   
   
-  Let's use an example of the Toronto Blue Jays here. This year, the rotation of starting pitchers is projected to produce 9.6 WAR. Most teams carry a rotation of 5 pitchers that will start games throughout a season. However, I want to incorperate all of the data at my hands and use % of starting innings pitched by each starting pitcher instead of just using a value of 5 to determine shares of starter innings pitched over the course of the season. Below is a table showing WAR values for each player and how much they are expected to contribute in a starter role:
+  Let's use an example of the Toronto Blue Jays here. This year, the rotation of starting pitchers is projected to produce 9.6 WAR. Most teams carry a rotation of 5 pitchers that will start games throughout a season. However, I want to incorporate all of the data at my hands and use % of starting innings pitched by each starting pitcher instead of just using a value of 5 to determine shares of starter innings pitched over the course of the season. Below is a table showing WAR values for each player and how much they are expected to contribute in a starter role:
   
   
   | Player                | % as SP | SP WAR | Calculation | 162 WAR |
@@ -196,7 +196,7 @@ Now obviously, both teams cannot win and both teams cannot lose. So we can elimi
 To compare to a moneyline, we need to convert American odds (-110, -200 +115, etc.) to a probability. You can use this calculator [here](https://www.gamingtoday.com/tools/implied-probability/) to play around with certain odds. An implied probability is the implied winning percentage for a given team in a game using gambling markets. When a book sets a price, we are able to use that implied probability to compare to my win percentages above.
   
   
-  Using our example from above, let's say that Toronto are heavy favorites at -300 and Pittsburgh are +270 underdogs. Converting these values to implied probability we get an implied probability of 75.00% for Toronto winning the game and 27.03% chance Pittsburgh wins this game according to the market. Below is a table showing the comparison of Rebirtha's probability to Vegas.
+  Using our example from above, let's say that Toronto are heavy favorites at -300 and Pittsburgh are +270 underdogs. Converting these values to implied probability we get an implied probability of 75.00% for Toronto winning the game and a 27.03% chance Pittsburgh wins this game according to the market. Below is a table showing the comparison of Rebirtha's probability to Vegas.
   
   
   *If Rebirtha Prob > Vegas Prob, then we have found value and will place a bet. The size of the bet is determined by using an algorithm that optimizes a bettor's long-term bankroll increase (or long-term returns)*
@@ -212,4 +212,4 @@ To compare to a moneyline, we need to convert American odds (-110, -200 +115, et
   ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) Conclusion ###
   
   
-  Essentially, this method of evaluating baseball games has been decently successful in the past and my hope is that I can implement changes every year to either improve the underlying data, my calculations, and/or the automation of certain processes. This model has taken various forms in Excel and Google Sheets, but I believe R has been the way to go in keeping this model running smoothly throughout the year and for many years to come.
+  Essentially, this method of evaluating baseball games has been decently successful in the past and my hope is that I can implement changes every year to either improve the underlying data, my calculations, and/or the automation of certain processes. This model has taken various forms in Excel and Google Sheets, but I believe R Programming has been the way to go in keeping this model running smoothly throughout the year and for many years to come.
